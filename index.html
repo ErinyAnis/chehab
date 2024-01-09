@@ -10,28 +10,31 @@
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <title>Home | Chehab</title>
 </head>
 
 <body>
+    <h1 class="d-none"></h1>
     <header class="w-100 position-absolute">
-        <div class="top-header row align-items-center">
-            <div class="col-6">
-                <div class="d-flex align-items-center justify-content-end mail">
-                    <img class="me-1" src="images/envelope.png" alt="envelope-icon">
-                    <div>support@example.com</div>
+        <div class="container">
+            <div class="top-header row align-items-center">
+                <div class="col-6">
+                    <div class="d-flex align-items-center justify-content-end mail">
+                        <img class="me-1" src="images/envelope.png" alt="envelope-icon">
+                        <div>support@example.com</div>
+                    </div>
                 </div>
-            </div>
-            <div class="col-6 right-side d-flex">
-                <div class="lang-button-container d-flex align-items-center pe-2">
-                    <img class="me-1" src="images/lang-icon.png" alt="language">
-                    <a href="#" class="language-button">English</a>
-                </div>
-                <div class="social">
-                    <a href="#"><img src="images/instagram-icon.png" alt="instagram-icon"></a>
-                    <a href="#"><img src="images/facebook-icon.png" alt="instagram-icon"></a>
+                <div class="col-6 right-side d-flex">
+                    <div class="lang-button-container d-flex align-items-center pe-2">
+                        <img class="me-1" src="images/lang-icon.png" alt="language">
+                        <a href="#" class="language-button">English</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><img src="images/instagram-icon.png" alt="instagram-icon"></a>
+                        <a href="#"><img src="images/facebook-icon.png" alt="instagram-icon"></a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -86,7 +89,7 @@
         </nav>
     </header>
 
-        <section class="sec-padding d-lg-none">
+        <section class="d-lg-none">
             <div class="container">
                 <div class="mobile-search">
                     <div class="search-container ">
@@ -112,7 +115,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur. Vivamus pellent
                                 esque odio tincidunt non nunc turpis semper facilisis eget.
                                 Laoreet est feugiat donec</p>
-                            <div class="mt-2">
+                            <div class="mt-3">
                                 <a href="#" class="main-btn">View more</a>
                             </div>
                         </div>
@@ -127,7 +130,7 @@
                             <p>Lorem ipsum dolor sit amet consectetur. Vivamus pellent
                                 esque odio tincidunt non nunc turpis semper facilisis eget.
                                 Laoreet est feugiat donec</p>
-                            <div class="mt-2">
+                            <div class="mt-3">
                                 <a href="#" class="main-btn">View more</a>
                             </div>
                         </div>
@@ -324,9 +327,8 @@
                     <h2 class="main">Categories</h2>
                     <h3 class="secondary">Categories</h3>
                 </div>
-                <!-- desktop-cards -->
                 <div class="mt-5">
-                    <div class="cards-holder d-flex align-items-center justify-content-center gap-4">
+                    <div class="cards-holder d-flex align-items-center justify-content-center gap-5">
                         <!-- secondary-card -->
                         <!-- start card -->
                         <div class="secondary-card text-center">
@@ -390,12 +392,202 @@
                         <!-- end card -->
                     </div>
                 </div>
+                <!-- download-app -->
+                <div class="container">
+                    <div class="download-app d-flex align-items-center justify-content-center">
+                        <i class="fa-solid fa-mobile-screen-button me-3"></i>
+                        <div>Download our new app today! Don’t miss our mobile-only offers and shop with Android Play.</div>
+                        <button class="main-btn ms-auto d-flex align-items-center">Download<i class="fa-solid fa-download ms-2 mb-1"></i></button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="reciently-viwed container-fluid sec-padding">
+            <div class="main-title container text-center">
+                <h2 class="main">Recently Viewed</h2>
+                <h3 class="secondary">Recently Viewed</h3>
+            </div>
+            <div class="container-fluid mt-5">
+                <div class="row">
+                    <!-- start-card -->
+                    <div class="col-6 col-md-4 col-lg-3 main-card">
+                        <div class="mt-4">
+                            <figure>
+                                <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                <div class="btn-container d-flex align-items-center gap-2 d-none d-md-block">
+                                    <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                    <a href="#" class="main-btn">Add to cart</a>
+                                </div>
+                            </figure>
+                            <a href="#">
+                                <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                <div class="price red">620 EGP</div>
+                                <div class="availability green">In Stock</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end-card -->
+                    <!-- start-card -->
+                    <div class="col-6 col-md-4 col-lg-3 main-card">
+                        <div class="mt-4">
+                            <figure>
+                                <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                <div class="btn-container d-flex align-items-center gap-2 d-none d-md-block">
+                                    <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                    <a href="#" class="main-btn">Add to cart</a>
+                                </div>
+                            </figure>
+                            <a href="#">
+                                <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                <div class="price red">620 EGP</div>
+                                <div class="availability green">In Stock</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end-card -->
+                    <!-- start-card -->
+                    <div class="col-6 col-md-4 col-lg-3 main-card">
+                        <div class="mt-4">
+                            <figure>
+                                <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                <div class="btn-container d-flex align-items-center gap-2 d-none d-md-block">
+                                    <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                    <a href="#" class="main-btn">Add to cart</a>
+                                </div>
+                            </figure>
+                            <a href="#">
+                                <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                <div class="price red">620 EGP</div>
+                                <div class="availability green">In Stock</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end-card -->
+                    <!-- start-card -->
+                    <div class="col-6 col-md-4 col-lg-3 main-card">
+                        <div class="mt-4">
+                            <figure>
+                                <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                <div class="btn-container d-flex align-items-center gap-2 d-none d-md-block">
+                                    <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                    <a href="#" class="main-btn">Add to cart</a>
+                                </div>
+                            </figure>
+                            <a href="#">
+                                <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                <div class="price red">620 EGP</div>
+                                <div class="availability green">In Stock</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!-- end-card -->
+                </div>
+            <!-- features -->
+            <div class="features-holder">
+                <div class="features row justify-content-center">
+                    <div class="col-6 col-md-3 text-center mb-4 mb-md-0">
+                       <figure>
+                            <img src="images/features-1.png" alt="">
+                       </figure>
+                       <div class="line"></div>
+                       <div class="title">Secure Payments</div>
+                    </div>
+                    <div class="col-6 col-md-3 text-center mb-4 mb-md-0">
+                        <figure>
+                            <img src="images/features-2.png" alt="">
+                        </figure>
+                        <div class="line"></div>
+                        <div class="title">Secure Payments</div>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <figure>
+                            <img src="images/features-3.png" alt="">
+                        </figure>
+                        <div class="line"></div>
+                        <div class="title">Secure Payments</div>
+                    </div>
+                    <div class="col-6 col-md-3 text-center">
+                        <figure>
+                            <img src="images/features-4.png" alt="">
+                        </figure>
+                        <div class="line"></div>
+                        <div class="title">Secure Payments</div>
+                    </div>
+                </div>
+            </div>
             </div>
         </section>
 
-        <div class="download-app"></div>
+        <section class="our-clients sec-padding">
+            <div class="container-fluid">
+                <div class="main-title container text-center">
+                    <h2 class="main">Our Clients</h2>
+                    <h3 class="secondary">Brands</h3>
+                </div>
+                <div class="d-flex align-items-center justify-content-center gap-5 scroll mt-5">
+                    <a href="#"><img src="images/client-1.png" alt="client-name"></a>
+                    <a href="#"><img src="images/client-2.png" alt="client-name"></a>
+                    <a href="#"><img src="images/client-1.png" alt="client-name"></a>
+                    <a href="#"><img src="images/client-2.png" alt="client-name"></a>
+                    <a href="#"><img src="images/client-1.png" alt="client-name"></a>
+                    <a href="#"><img src="images/client-2.png" alt="client-name"></a>
+                </div>
+            </div>
+        </section>
 
-
+        <footer class="mt-5">
+            <div class="container">
+                <div class="row mb-5">
+                    <div class="col-md-3 text-center text-md-start">
+                        <a href="index.html"><img class="logo" src="images/footer-logo.png" alt="Chehab"></a>
+                        <p>Clarity gives you the blocks and components you need to create a truly professional website.</p>
+                    </div>
+                    <div class="col-md-9 mt-3 mt-lg-0">
+                        <div class="row">
+                            <div class="col-6 col-lg-3">
+                                <div class="title">Company</div>
+                                <div><a href="index.html">Home</a></div>
+                                <div><a href="categories.html">Categories</a></div>
+                                <div><a href="about.html">About</a></div>
+                                <div><a href="contact.html">Contact</a></div>
+                                <div><a href="Brands.html">Brands</a></div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="title">Important Links</div>
+                                <div><a href="#">Important Links</a></div>
+                                <div><a href="#">Store Location</a></div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="title">Customer Service</div>
+                                <div><a href="#">Help Center</a></div>
+                                <div><a href="categories.html">Brands</a></div>
+                                <div><a href="about.html">Contacts</a></div>
+                            </div>
+                            <div class="col-6 col-lg-3">
+                                <div class="title">User Area</div>
+                                <div><a href="index.html">Login</a></div>
+                                <div><a href="categories.html">Register</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="social d-flex align-items-center justify-content-center gap-3 mb-3">
+                    <a href="#" class="icon-holder">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="icon-holder">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </a>
+                </div>
+                <div class="line mb-3"></div>
+                <div class="copy-right">
+                    <div class="text-center">
+                        Copyright © 2023 AMZ Tools Egypt, Developed By <a href="www.innovationscope.com">Innovation Scope</a>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
     </body>
 
