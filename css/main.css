@@ -59,9 +59,9 @@ a:hover {
   color: var(--white);
   border: 1px solid var(--red);
   border-radius: 5px;
-  padding: 4px 20px;
+  padding: 7px 20px;
   transition: var(--transition);
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .main-btn:hover {
@@ -104,7 +104,7 @@ a:hover {
 @media (max-width: 767px) {
   .main-btn, .secondary-btn {
     font-size: 14px;
-    padding: 4px 15px;
+    padding: 8px 18px;
   }
   /* .sec-padding {
      padding-top: 20px;
@@ -182,7 +182,7 @@ nav ul li .nav-link {
   font-weight: 500;
   transition: var(--transition);
   color: var(--blue-primary);
-  font-size: 18px;
+  font-size: 20px;
 }
 
 nav ul li a:hover,
@@ -259,7 +259,7 @@ nav .search-and-icons img {
   nav .menu-btn i {
     display: block;
     color: var(--red);
-    font-size: 18px;
+    font-size: 20px;
   }
 
   nav ul {
@@ -296,7 +296,7 @@ nav .search-and-icons img {
     display: block;
     padding: 10px 0;
     text-align: start;
-    font-size: 14px;
+    font-size: 18px;
   }
 
   nav ul li.active,
@@ -322,6 +322,21 @@ nav .search-and-icons img {
     padding: 0;
     color: var(--red);
   }
+
+  header .overlay {
+    position: absolute;
+    background-color: #00000063;
+    height: 100vh;
+    width: 100vw;
+    left: 0;
+    top: 90px;
+    opacity: 0;
+    transition: var(--transition);
+  }
+
+   header .overlay.display {
+    opacity: 1;;
+   }
 }
 /* end-navbar */
 /* ----------------------------------------- */
@@ -375,12 +390,12 @@ nav .search-and-icons img {
 }
 
 .main-card figure .btn-container .main-btn {
-    padding: 6px 11px;
+    padding: 8px 11px;
     color: var(--white);
 }
 
 .main-card figure .btn-container .secondary-btn {
-  padding: 6px 22px;
+    padding: 8px 25px
 }
 
 .main-card figure:hover .btn-container .main-btn, .main-card figure:hover .btn-container .secondary-btn {
@@ -389,14 +404,14 @@ nav .search-and-icons img {
 
 .main-card h3 {
   font-weight: 700;
-  font-size: 18px;
+  font-size: 20px;
   margin-bottom: 3px;
   color: var(--basic);
 }
 
-.main-card .price {
+.main-card .price, .main-card .availability  {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .main-card figure img:focus-visible {
@@ -406,10 +421,6 @@ nav .search-and-icons img {
 @media (max-width: 767px) {
   .main-card .price {
     font-size: 14px;
-  }
-
-  .main-card figure img {
-    /* height: 165px; */
   }
 
   .main-card h3 {
@@ -433,12 +444,11 @@ nav .search-and-icons img {
   text-align: center;
   transition: var(--transition);
   display: flex;
-    justify-content: center;
+  justify-content: center;
 }
 
 .secondary-card figure img {
   object-fit: contain;
-  /* height: 170px; */
 }
 
 .secondary-card h3 {
@@ -456,12 +466,6 @@ nav .search-and-icons img {
 .secondary-card:hover figure {
   box-shadow: 0px 0px 6px 2px #80808033;
 }
-
-@media (max-width: 767px) {
-  .secondary-card figure img {
-    /* height: 105px; */
-  }
-}
 /* end secondary card */
 
 /* ----------------------------------- */
@@ -469,13 +473,13 @@ nav .search-and-icons img {
 .main-title h2 {
   color: var(--Gray-light-3);
   font-weight: 600;
-  font-size: 80px;
+  font-size: 90px;
 }
 
 .main-title h3 {
   font-weight: 600;
       margin-top: -57px;
-  font-size: 40px;
+  font-size: 50px;
 }
 
 @media (max-width: 767px) {
