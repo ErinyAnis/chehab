@@ -6,8 +6,10 @@
   --Gray-light: #a2a2a2;
   --Gray-light-2: #c4c4c4;
   --Gray-light-3: #ececec;
+  --Gray-4: #ececec;
   --Gray-middle: #808080;
   --Gray-high: #646363;
+  --gray-900: #18181B;
   --red: #ec1a23;
   --main-button-hover: #b0181e;
   --white: #ffffff;
@@ -39,6 +41,7 @@ img {
 
 a {
   text-decoration: none;
+  color: var(--basic);
 }
 
 a:focus {
@@ -88,8 +91,12 @@ a:hover {
   margin-top: 140px;
 }
 
+.f-sec-padding-top {
+  padding-top: 140px;
+}
+
 .red {
-  color: var(--red);
+  color: var(--red) !important;
 }
 .green {
   color: var(--green);
@@ -156,63 +163,63 @@ header hr {
 /* end-top-header */
 
 /* nav-bar */
-nav .logo img {
+header nav .logo img {
   height: 50px;
   object-fit: contain;
 }
 
-nav {
+header nav {
   padding: 17px 15px !important;
   box-shadow: rgb(153 153 153 / 13%) 1px 3px 4px 0px;
   z-index: 100;
   position: relative;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   list-style: none;
   margin-bottom: 0;
 }
 
-nav ul li {
+header nav ul li {
   margin: 0 15px;
 }
 
-nav ul li .nav-link {
+header nav ul li .nav-link {
   font-weight: 500;
   transition: var(--transition);
   color: var(--blue-primary);
   font-size: 20px;
 }
 
-nav ul li a:hover,
-nav ul li.active a {
+header nav ul li a:hover,
+header nav ul li.active a {
   color: var(--red) !important;
   text-decoration: none;
 }
 
-nav label {
+header nav label {
   width: 30px;
   height: 12px;
   cursor: pointer;
 }
 
-nav .menu-btn img {
+header nav .menu-btn img {
   max-width: 100%;
   cursor: pointer;
   display: none;
   transition: var(--transition);
 }
 
-nav input[type="checkbox"] {
+header nav input[type="checkbox"] {
   display: none;
 }
 
-nav .search-and-icons a {
+header nav .search-and-icons a {
   padding: 3px;
 }
 
-nav .search-and-icons img {
+header nav .search-and-icons img {
   height: 25px;
   object-fit: contain;
 }
@@ -252,17 +259,17 @@ nav .search-and-icons img {
 
 /* header-responsive */
 @media (max-width: 992px) {
-  nav {
+  header nav {
     padding: 20px 15px !important;
   }
 
-  nav .menu-btn i {
+  header nav .menu-btn i {
     display: block;
     color: var(--red);
     font-size: 20px;
   }
 
-  nav ul {
+  header nav ul {
     position: absolute;
     top: 86px;
     left: -100%;
@@ -282,7 +289,7 @@ nav .search-and-icons img {
     left: 0;
   }
 
-  nav ul li {
+  header nav ul li {
     width: 96%;
     margin: 0;
     color: var(--red);
@@ -290,7 +297,7 @@ nav .search-and-icons img {
     padding-left: 25px;
   }
 
-  nav ul li .nav-link {
+  header nav ul li .nav-link {
     width: 100%;
     margin-left: -100%;
     display: block;
@@ -299,14 +306,14 @@ nav .search-and-icons img {
     font-size: 18px;
   }
 
-  nav ul li.active,
-  nav ul li:hover {
+  header nav ul li.active,
+  header nav ul li:hover {
     background-color: var(--red);
     width: 100%;
   }
 
-  nav ul li.active .nav-link,
-  nav ul li:hover .nav-link {
+  header nav ul li.active .nav-link,
+  header nav ul li:hover .nav-link {
     color: var(--white) !important;
   }
 
@@ -314,11 +321,11 @@ nav .search-and-icons img {
     margin-left: 0px;
   }
 
-  nav .menu-btn img {
+  header nav .menu-btn img {
     display: block;
   }
 
-  nav .search-and-icons a {
+  header nav .search-and-icons a {
     padding: 0;
     color: var(--red);
   }

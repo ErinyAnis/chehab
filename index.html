@@ -602,22 +602,6 @@
 
     <script>
         $(document).ready(function () {
-            $('.products-slider').slick({
-                slidesToShow: 1.5,  // Display 1.5 slides
-                slidesToScroll: 1,
-                infinite: false,
-                arrows: false,
-                dots: false,
-            });
-
-            $('.categories-slider').slick({
-                slidesToShow: 1.5,  // Display 1.5 slides
-                slidesToScroll: 1,
-                infinite: false,
-                arrows: false,
-                dots: false,
-            });
-
             $('.hero-slider').slick({
                 slidesToShow: 1,  // Display 1.5 slides
                 slidesToScroll: 1,
@@ -640,8 +624,13 @@
                 // Toggle the class based on the checkbox state
                 $('.overlay').toggleClass('display', this.checked);
             });
-            $('.overlay').click(function () {
-                $('nav ul').hide();
+           $('#click').change(function () {
+                if ($(this).is(':checked')) {
+                    $('nav ul').css('left', '0');
+                } else {
+                    // If you want to reset the style when unchecked
+                    $('nav ul').css('left', '-100%'); // Reset to default value or any other value you want
+                }
             });
             });
     </script>
