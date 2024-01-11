@@ -399,9 +399,21 @@
                 $('#toggleFilter').click(function () {
                     $('#filterContent').toggleClass('visible');
                 });
-                
+                $('#click').change(function () {
+                // Toggle the class based on the checkbox state
+                $('.overlay').toggleClass('display', this.checked);
+                });
+                $('#click').change(function () {
+                if ($(this).is(':checked')) {
+                    $('nav ul').css('left', '0');
+                } else {
+                    // If you want to reset the style when unchecked
+                    $('nav ul').css('left', '-100%'); // Reset to default value or any other value you want
+                }
+            });
             });
     </script>
+
     </body>
     
     </html>

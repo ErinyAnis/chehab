@@ -120,7 +120,48 @@
                             <span class="fa fa-star fa-fw"></span>
                         </div>
                     </div>
-                    <div class="total-rev-num">157 Reviews</div>
+                    <div class="total-rev-num mb-2 mt-2">157 Reviews</div>
+                </div>
+                <div class="price mt-5 mb-5">
+                    <!-- price -->
+                    <div class=" d-flex align-items-center">
+                            <div class="fw-700 title">Price:</div> 
+                            <span class="current-price red fw-700 ms-4 title">8,400 EGP</span> 
+                            <del class="old-price gray-middle ms-2 fw-500">8,900 EGP</del>
+                    </div>
+                    <!-- saving -->
+                    <div class="d-flex align-items-center">
+                        <div class="title fw-700">Saving :</div>
+                        <span class="saving-num green ms-3">500 EGP</span>
+                    </div>
+                </div>
+                <!-- description -->
+                <div class="description">
+                    <div class="d-flex align-items-center">
+                        <div class="red fw-700 title">Brand :</div>
+                        <a href="#" class="brand-link gray-middle ms-3">Total</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="red fw-700 title">Category : :</div>
+                        <a href="#" class="brand-link gray-middle ms-3">Pliers, Tools Set</a>
+                    </div>
+                    <div class="d-flex align-items-center">
+                        <div class="red fw-700 title">Model No. :</div>
+                        <div class="brand-link gray-middle ms-3">THKTV02P041</div>
+                    </div>
+                </div>
+                <div class="counter-container mt-5">
+                    <button class="counter-btn secondary-btn align-items-center" id="counterBtn">
+                        <div class="icon-btn" id="decrement">
+                            <span>-</span>
+                        </div>
+                        <div id="counter" class="num">
+                            <span>0</span>
+                        </div>
+                        <div class="icon-btn" id="increment">
+                            <span>+</span>
+                        </div>
+                    </button>
                 </div>
             </div>
         </div>
@@ -193,6 +234,7 @@
                             <div class="content-holder">
                                 <div class="container">
                                     <h2>Customers Reviews</h2>
+                                    <!-- reviews -->
                                     <div class="row reviews">
                                         <!-- reviews -->
                                         <div class="col-lg-6">
@@ -232,9 +274,11 @@
                                             </div>
                                         </div>
                                     </div>
+                                    <!-- add-review -->
                                     <div class="text-center mt-5">
                                         <button class="main-btn" id="openModalBtn">Add Review</button>
                                     </div>
+                                    <!-- modal -->
                                     <div id="modal" class="modal">
                                         <div class="modal-content">
                                             <div class="ms-auto">
@@ -279,16 +323,95 @@
             
                     </div>
                 </div>
-            
-            
             </div>
         </div>
     </section>
 
+    <!-- related products -->
+    <section class="reciently-viwed container-fluid sec-padding">
+        <div class="main-title container text-center">
+            <h2 class="main">Products</h2>
+            <h3 class="secondary">Related</h3>
+        </div>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <!-- start-card -->
+                <div class="col-6 col-md-4 col-lg-3 main-card">
+                    <div class="mt-4">
+                        <figure>
+                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="main-btn">Add to cart</a>
+                            </div>
+                        </figure>
+                        <a href="#">
+                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                            <div class="price red">620 EGP</div>
+                            <div class="availability green">In Stock</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end-card -->
+                <!-- start-card -->
+                <div class="col-6 col-md-4 col-lg-3 main-card">
+                    <div class="mt-4">
+                        <figure>
+                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="main-btn">Add to cart</a>
+                            </div>
+                        </figure>
+                        <a href="#">
+                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                            <div class="price red">620 EGP</div>
+                            <div class="availability green">In Stock</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end-card -->
+                <!-- start-card -->
+                <div class="col-6 col-md-4 col-lg-3 main-card">
+                    <div class="mt-4">
+                        <figure>
+                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="main-btn">Add to cart</a>
+                            </div>
+                        </figure>
+                        <a href="#">
+                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                            <div class="price red">620 EGP</div>
+                            <div class="availability green">In Stock</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end-card -->
+                <!-- start-card -->
+                <div class="col-6 col-md-4 col-lg-3 main-card">
+                    <div class="mt-4">
+                        <figure>
+                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                <a href="#" class="main-btn">Add to cart</a>
+                            </div>
+                        </figure>
+                        <a href="#">
+                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                            <div class="price red">620 EGP</div>
+                            <div class="availability green">In Stock</div>
+                        </a>
+                    </div>
+                </div>
+                <!-- end-card -->
+            </div>
+        </div>
+    </section>
 
-
-
-<!-- <footer class="mt-5">
+    <footer class="mt-5">
     <div class="container">
         <div class="row mb-5">
             <div class="col-md-3 text-center text-md-start">
@@ -339,7 +462,7 @@
             </div>
         </div>
     </div>
-</footer> -->
+    </footer>
 
 </body>
 
@@ -361,7 +484,7 @@
             slidesToShow: 1,  // Display 1.5 slides
             slidesToScroll: 1,
             infinite: true,
-            // autoplay: true,
+            autoplay: true,
             dots: false,
             arrows: true,
             responsive: [
@@ -374,9 +497,27 @@
                 }
             ]
         });
+        // counter
+        let counterValue = 0;
 
+        function updateCounter() {
+            $('#counter span').text(counterValue);
+        }
+
+        $('#decrement').on('click', function () {
+            if (counterValue > 0) {
+                counterValue--;
+                updateCounter();
+            }
+        });
+
+        $('#increment').on('click', function () {
+            counterValue++;
+            updateCounter();
+        });
     });
 </script>
+
 </body>
 
 </html>
