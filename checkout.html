@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
-    <title>Sub-Categories | Chehab</title>
+    <title>Checkout | Chehab</title>
 </head>
 
 <body>
@@ -60,7 +60,7 @@
 
                 <ul class="nav-links align-items-center">
                     <li><a class="nav-link " href="index.html">Home</a></li>
-                    <li class="active"><a class="nav-link" href="categories.html">Categories</a></li>
+                    <li><a class="nav-link" href="categories.html">Categories</a></li>
                     <li><a class="nav-link" href="brands.html">Brands</a></li>
                     <li><a class="nav-link" href="about.html">About</a></li>
                     <li><a class="nav-link" href="contact.html">Contact</a></li>
@@ -85,96 +85,51 @@
                     </div>
                 </div>
             </div>
-
         </nav>
         <div class="overlay"></div>
     </header>
 
     <section class="product-details f-sec-padding-top">
-        <div class="container">
+        <div class="container-fluid">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                    <li class="breadcrumb-item"><a href="categories.html">Category</a></li>
-                    <li class="breadcrumb-item active" aria-current="page">Hand Tools</li>
+                    <li class="breadcrumb-item active" aria-current="page">Shipping Address</li>
                 </ol>
             </nav>
         </div>
     </section>
 
-    <!-- categories -->
-    <section class="sub-categories categories sec-padding pt-0">
+    <!-- checkout -->
+    <section class="check-out sec-padding">
         <div class="container">
-            <h2 class="fw-700">Hand Tools</h2>
-            <div class="mt-5 container">
-                <div class="cards-holder d-flex align-items-center justify-content-center gap-5 scroll">
-                    <!-- secondary-card -->
-                    <!-- start card -->
-                    <div class="secondary-card text-center">
-                        <a href="product-details.html">
-                            <figure>
-                                <img src="images/card-category-1.png" alt="category-title">
-                            </figure>
-                        </a>
-                        <a href="product-details.html">
-                            <h3>Tools Box</h3>
-                        </a>
+            <div class="row">
+                <div class="col-lg-8">
+                    <div class="login d-flex align-items-center">
+                        <div class="fw-500">Returning customer?</div>
+                        <a href="#" class="red">Click here to login</a>
                     </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="secondary-card text-center">
-                        <a href="#">
-                            <figure>
-                                <img src="images/card-category-1.png" alt="category-title">
-                            </figure>
-                        </a>
-                        <a href="#">
-                            <h3>Tools Box</h3>
-                        </a>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                        <label class="form-check-label" for="exampleRadios1">
+                            Default radio
+                        </label>
                     </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="secondary-card text-center">
-                        <a href="#">
-                            <figure>
-                                <img src="images/card-category-1.png" alt="category-title">
-                            </figure>
-                        </a>
-                        <a href="#">
-                            <h3>Tools Box</h3>
-                        </a>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Second default radio
+                        </label>
                     </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="secondary-card text-center">
-                        <a href="#">
-                            <figure>
-                                <img src="images/card-category-1.png" alt="category-title">
-                            </figure>
-                        </a>
-                        <a href="#">
-                            <h3>Tools Box</h3>
-                        </a>
-                    </div>
-                    <!-- end card -->
-                    <!-- start card -->
-                    <div class="secondary-card text-center">
-                        <a href="#">
-                            <figure>
-                                <img src="images/card-category-1.png" alt="category-title">
-                            </figure>
-                        </a>
-                        <a href="#">
-                            <h3>Tools Box</h3>
-                        </a>
-                    </div>
-                    <!-- end card -->
+                </div>
+                <div class="col-lg-4">
+                
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="mt-5">
+    <footer>
         <div class="container">
             <div class="row mb-5">
                 <div class="col-md-3 text-center text-md-start">
@@ -234,25 +189,8 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
-<script src="vendor/slick-carousel/js/slick.min.js"></script>
 <script src="js/index.js"></script>
 
-<script>
-    $(document).ready(function () {
-            $('#click').change(function () {
-                // Toggle the class based on the checkbox state
-                $('.overlay').toggleClass('display', this.checked);
-            });
-            $('#click').change(function () {
-                if ($(this).is(':checked')) {
-                    $('nav ul').css('left', '0');
-                } else {
-                    // If you want to reset the style when unchecked
-                    $('nav ul').css('left', '-100%'); // Reset to default value or any other value you want
-                }
-            });
-        });
-</script>
 </body>
 
 </html>

@@ -107,51 +107,139 @@
                 <h2 class="main">Shopping</h2>
                 <h3 class="secondary">Cart</h3>
             </div>
-            <table class="table mt-5">
-                <thead>
-                    <tr>
-                        <th scope="col">#</th>
-                        <th scope="col">Product Name</th>
-                        <th scope="col">Price</th>
-                        <th scope="col">Quantity</th>
-                        <th scope="col">Subtotal</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th scope="row"><button class="delete-btn"><i class="fa-solid fa-trash"></i></th>
-                        <td>
-                            <div class="product-container d-flex align-items-center">
-                                <img class="product-img" src="images/product-1.png" alt="product-name">
-                                <div class="product-name">High Pressure Washer 180 <br> BAR 2800 WATT</div>
-                            </div>
-                        </td>
-                        <td>8900 EGP</td>
-                        <td>@mdo</td>
-                        <td>8900 EGP</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">2</th>
-                        <td>Jacob</td>
-                        <td>Thornton</td>
-                        <td>@fat</td>
-                        <td>@fat</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">3</th>
-                        <td>Larry the Bird</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                        <td>@twitter</td>
-                    </tr>
-                </tbody>
-            </table>
+            <div class="table-container">
+                <table class="table mt-5">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Product Name</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Quantity</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row"><button class="delete-btn"><i class="fa-solid fa-trash"></i></th>
+                            <td>
+                                <div class="product-container d-flex align-items-center justify-content-center">
+                                    <img class="product-img" src="images/product-1.png" alt="product-name">
+                                    <div class="product-name">High Pressure Washer 180 <br> BAR 2800 WATT</div>
+                                </div>
+                            </td>
+                            <td>8900 EGP</td>
+                            <td>
+                                <div class="counter-container">
+                                    <button class="counter-btn secondary-btn align-items-center counterBtn">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter">
+                                            <span data-stock="5" data-min="1">1</span>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>8900 EGP</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button class="delete-btn"><i class="fa-solid fa-trash"></i></th>
+                            <td>
+                                <div class="product-container d-flex align-items-center justify-content-center">
+                                    <img class="product-img" src="images/product-1.png" alt="product-name">
+                                    <div class="product-name">High Pressure Washer 180 <br> BAR 2800 WATT</div>
+                                </div>
+                            </td>
+                            <td>8900 EGP</td>
+                            <td>
+                                <div class="counter-container">
+                                    <button class="counter-btn secondary-btn align-items-center counterBtn">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter">
+                                            <span data-stock="5" data-min="1">1</span>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>8900 EGP</td>
+                        </tr>
+                        <tr>
+                            <th scope="row"><button class="delete-btn"><i class="fa-solid fa-trash"></i></th>
+                            <td>
+                                <div class="product-container d-flex align-items-center justify-content-center">
+                                    <img class="product-img" src="images/product-1.png" alt="product-name">
+                                    <div class="product-name">High Pressure Washer 180 <br> BAR 2800 WATT</div>
+                                </div>
+                            </td>
+                            <td>8900 EGP</td>
+                            <td>
+                                <div class="counter-container">
+                                    <button class="counter-btn secondary-btn align-items-center counterBtn">
+                                        <div class="icon-btn decrement">
+                                            <span>-</span>
+                                        </div>
+                                        <div class="num counter">
+                                            <span data-stock="5" data-min="1">1</span>
+                                        </div>
+                                        <div class="icon-btn increment">
+                                            <span>+</span>
+                                        </div>
+                                    </button>
+                                </div>
+                            </td>
+                            <td>8900 EGP</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="total-price sec-padding">
+        <div class="container">
+            <div class="data-holder">
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="gray-high mb-3">Sub Total</div>
+                        <div class="gray-high mb-3">Shipping Fees</div>
+                        <div class="gray-high mb-3">Discount</div>
+                    </div>
+                    <div>
+                        <div class="mb-3">8,900 EGP</div>
+                        <div class="mb-3">150 EGP</div>
+                        <div class="red mb-3">(-150 EGP)</div>
+                    </div>
+                </div>
+                <!-- under-line -->
+                <div class="pt-3 pb-4">
+                    <div class="line"></div>
+                </div>
+
+                <div class="d-flex justify-content-between total">
+                    <div>
+                        <div class="red fw-700 mb-3">Total</div>
+                    </div>
+                    <div>
+                        <div class="red fw-700 mb-3">9,050 EGP</div>
+                    </div>
+                </div>
+                <div class="mt-4 text-center check-out">
+                    <a href="checkout.html" class="main-btn">Proceed to checkout</a>
+                </div>
+
             </div>
         </div>
     </section>
 
-    <!-- facts-and-numbers -->
-    
 
     <footer>
         <div class="container">
@@ -218,19 +306,25 @@
 
 <script>
     $(document).ready(function () {
-        $('#click').change(function () {
-            // Toggle the class based on the checkbox state
-            $('.overlay').toggleClass('display', this.checked);
-        });
-        $('#click').change(function () {
-            if ($(this).is(':checked')) {
-                $('nav ul').css('left', '0');
-            } else {
-                // If you want to reset the style when unchecked
-                $('nav ul').css('left', '-100%'); // Reset to default value or any other value you want
-            }
+        // counter
+        $('.decrement').on('click', function () {
+            var qty = $(this).next('.counter').children('span').text();
+            var min = $(this).next('.counter').children('span').data('min');
+            if (Number(qty) > min) { $(this).next('.counter').children('span').text(Number(qty) - 1); }  else  { alert('this is minimum quantity you can add') }
         });
 
+        $('.increment').on('click', function () {
+            var qty = $(this).prev('.counter').children('span').text();
+            var min = $(this).prev('.counter').children('span').data('min');
+            var max = $(this).prev('.counter').children('span').data('stock');
+            if (Number(qty) < max) { $(this).prev('.counter').children('span').text(Number(qty) + 1); }  else {alert('this is maximum quantity you can add')}          
+        });
+
+        // delete-btn
+        $('.delete-btn').on('click', function () {
+            // Find the parent row and remove it
+            $(this).closest('.table-container table tr').remove();
+        });
     });
 </script>
 </body>

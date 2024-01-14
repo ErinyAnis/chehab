@@ -8,8 +8,21 @@ $(document).ready(function () {
     }
     var scroll = $(window).scrollTop();
   });
-
   $(".slick-prev").addClass("slick-prev-animate");
+  $("#click").change(function () {
+    // Toggle the class based on the checkbox state
+    $(".overlay").toggleClass("display", this.checked);
+  });
+  $("#click").change(function () {
+    if ($(this).is(":checked")) {
+      $("nav ul").css("left", "0");
+    } else {
+      // If you want to reset the style when unchecked
+      $("nav ul").css("left", "-100%"); // Reset to default value or any other value you want
+    }
+  });
+
+  // click outside nav to close it
   $("#click").change(function () {
     // Toggle the class based on the checkbox state
     $(".overlay").toggleClass("display", this.checked);
@@ -18,16 +31,14 @@ $(document).ready(function () {
   $(".fa-bars").click(function () {
     $(this).toggleClass("fa-xmark");
   });
+  // end-navbar
 
-  $("li .nav-link").click(function () {
-    $("li .nav-link.active").removeClass("active");
-    $(this).toggleClass("active");
-  });
-
+  // language-toggle-btn
   $(".language-button").click(function () {
     $(this).text($(this).text() == "English" ? "Arabic" : "English");
   });
 
+  // product-details-modal
   $("#openModalBtn").click(function () {
     $("#modal").fadeIn();
   });
@@ -41,7 +52,9 @@ $(document).ready(function () {
   $(".modal-content").click(function (event) {
     event.stopPropagation();
   });
+  // end-modal
 
+  // review-stars
   /* 1. Visualizing things on Hover - See next part for action on click */
   $("#stars li")
     .on("mouseover", function () {
@@ -95,37 +108,6 @@ $(document).ready(function () {
     }
     responseMessage(msg);
   });
+  // end-review-stars
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const selectHeader = document.querySelector(".select-header");
-  const options = document.querySelector(".options");
-
-  selectHeader.addEventListener("click", function () {
-    options.style.display =
-      options.style.display === "block" ? "none" : "block";
-    const arrow = document.querySelector(".arrow");
-    arrow.style.transform =
-      options.style.display === "block" ? "rotate(180deg)" : "rotate(0deg)";
-  });
-
-  document.addEventListener("click", function (event) {
-    if (
-      !selectHeader.contains(event.target) &&
-      !options.contains(event.target)
-    ) {
-      options.style.display = "none";
-      const arrow = document.querySelector(".arrow");
-      arrow.style.transform = "rotate(0deg)";
-    }
-  });
-
-  options.addEventListener("click", function (event) {
-    if (event.target.tagName === "LI") {
-      selectHeader.querySelector("span").innerText = event.target.innerText;
-      options.style.display = "none";
-      const arrow = document.querySelector(".arrow");
-      arrow.style.transform = "rotate(0deg)";
-    }
-  });
-});

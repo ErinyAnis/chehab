@@ -272,8 +272,16 @@
 }
 
 .products .custom-select .arrow {
-  transition: transform 0.3s ease-in-out;
+ 
   margin-top: 2px;
+}
+
+.custom-select .dropdown-icon {
+   transition: transform 0.3s ease-in-out;
+}
+
+.custom-select .dropdown-icon.flipped {
+  transform: translateY(-15%) rotate(180deg);
 }
 
 .products .custom-select .options {
@@ -310,7 +318,6 @@
 
 .products  .filter-content {
   max-height: 0;
-  overflow: hidden;
   padding: 10px;
    opacity: 0;
    visibility: hidden;
@@ -418,6 +425,7 @@
   transition: var(--transition);
 }
 
+/* counter */
 .product-details .details .counter-container {
     display: flex;
     align-items: center;
@@ -462,7 +470,6 @@
 /* product-details-info */
 .product-details .content-holder {
   background-color: var(--Gray-4);
-  padding: 25px 0;
 }
 .product-details .nav-container .content-holder h2 {
   color: var(--red);
@@ -732,9 +739,6 @@
 /* end-side-info */
 
 /* get-in-touch */
-.get-in-touch .contact {
-    padding: 0 10%;
-}
 
 .get-in-touch .middle {
     border-left: 2px solid var(--basic);
@@ -766,12 +770,6 @@
 }
 
 /* contact-us-responsive */
-@media (max-width: 992px) {
-    .get-in-touch .contact {
-        padding: 0 5%;
-    }
-}
-
 @media (max-width: 767px) {
   .contact-us .side-info .icon {
     max-width: 30px;
@@ -876,6 +874,7 @@
 /* shopping-cart */
 .shopping-cart thead tr th {
   background-color: var(--Gray-light-3);
+  text-align: center;
 }
 
 .shopping-cart table .delete-btn {
@@ -892,10 +891,6 @@
   color: var(--red);
 }
 
-.shopping-cart table .product-container {
-  max-width: fit-content;
-}
-
 .shopping-cart table .product-img {
   border: 1px solid var(--red);
   border-radius: 5px;
@@ -904,6 +899,156 @@
 .shopping-cart table .product-name {
   font-size: 20px;
   font-weight: 700;
-  padding-left: 10px;
+  padding-left: 30px;
+  text-align: left;
+}
+/* counter */
+.shopping-cart .counter-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
+.shopping-cart .counter-btn {
+    display: flex;
+}
+
+.shopping-cart .icon-btn {
+    width: 25px;
+    height: 25px;
+    color: var(--red);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.shopping-cart .icon-btn span {
+  font-size: 20px;
+}
+
+.shopping-cart .counter-container .secondary-btn {
+  background-color: #ECECEC4A;
+  padding: 4px 8px;
+}
+
+.shopping-cart .counter-container .secondary-btn:hover {
+  border: 1px solid var(--Gray-light-2);
+}
+
+.shopping-cart .counter-container .num {
+  color: var(--basic);
+  padding: 7px 10px 3px;
+  font-weight: 500;
+}
+/* end-counter */
+
+.shopping-cart table th {
+  vertical-align: middle;
+}
+
+.shopping-cart .table>tbody>tr>td, .shopping-cart .table>tbody>tr>th{
+  text-align: center;
+  vertical-align: middle;
+  font-weight: 500;
+  min-width: 100px;
+}
+
+.shopping-cart .table-container {
+  overflow-x: auto;
+}
+
+  @media (max-width: 992px) {
+    /* Optional styles for small screens, adjust as needed */
+    .shopping-cart .table-container {
+      width: 100%;
+    }
+    .shopping-cart table .product-img {
+      height: 65px;
+    }
+    .shopping-cart table .product-name {
+      padding-left: 15px;
+      padding-right: 15px;
+      font-size: 16px;
+      min-width: 170px;
+    }
+    .shopping-cart table .delete-btn i {
+      font-size: 16px;
+    }
+  }
+
+/* total-price */
+.total-price .data-holder {
+     background-color: var(--Gray-light-2);
+    padding: 3% 30%;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.total-price .sub-total-holder {
+  border-bottom: 1px solid var(--Gray-light);
+}
+
+.total-price .line {
+  background-color: var(--Gray-light);
+  height: 1.5px;
+}
+
+.total-price .total {
+  font-size: 18px;
+}
+
+.total-price .check-out button {
+      font-size: 16px;
+}
+
+  @media (max-width: 767px) {
+    .total-price .data-holder {
+      font-size: 14px;
+    }
+    .total-price .total {
+      font-size: 16px;
+    }
+  }
+/* end-shopping-cart */
+/* --------------------------------------------------- */
+
+/* start checkout */
+.check-out .login {
+  background-color: #C416171A;
+  padding: 5px 20px;
+  margin-bottom: 10px;
+}
+
+.check-out .login div {
+  font-size: 20px;
+}
+
+.check-out .login a {
+  font-size: 16px;
+  text-decoration: underline;
+  margin-left: 10px;
+  transition: var(--transition);
+}
+
+.check-out .login a:hover {
+  color: var(--basic) !important;
+}
+
+.check-out .form-check-input:checked, .check-out .form-check-input:focus {
+    background-color: var(--red);
+    border-color: var(--red);
+}
+
+.check-out .form-check input {
+    box-shadow: none;
+    cursor: pointer;
+    border: 1px solid var(--red);
+    font-size: 16px;
+}
+
+.check-out .form-check label {
+    cursor: pointer;
+}

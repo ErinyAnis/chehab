@@ -28,6 +28,15 @@ body {
   color: var(--basic);
 }
 
+.container {
+  width: 1600px;
+}
+
+.container-fluid {
+  padding-right: 45px;
+  padding-left: 45px;
+}
+
 /* main components */
 .sec-padding {
   padding-top: 30px;
@@ -107,6 +116,10 @@ a:hover {
 
 .gray-middle {
   color: var(--Gray-middle);
+}
+
+.gray-high {
+  color: var(--Gray-high);
 }
 /* end-colors */
 
@@ -296,7 +309,7 @@ header nav .search-and-icons img {
 
   header nav ul {
     position: absolute;
-    top: 86px;
+    top: 90px;
     left: -100%;
     min-height: 93vh;
     width: 80%;
@@ -356,19 +369,19 @@ header nav .search-and-icons img {
   }
 
   header .overlay {
-    position: absolute;
+    position: fixed;
     background-color: #00000063;
     height: 100vh;
     width: 100vw;
-    left: 0;
-    top: 90px;
     opacity: 0;
     transition: var(--transition);
     z-index: -1;
+
   }
 
   header .overlay.display {
     opacity: 1;
+    z-index: 1;
   }
 }
 /* end-navbar */
@@ -447,7 +460,14 @@ header nav .search-and-icons img {
 .main-card .price,
 .main-card .availability {
   font-weight: 500;
+}
+
+.main-card .price {
   font-size: 18px;
+}
+
+.main-card .availability {
+  font-size: 16px;
 }
 
 .main-card figure img:focus-visible {

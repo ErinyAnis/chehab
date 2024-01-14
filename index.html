@@ -147,7 +147,7 @@
 
         <!-- products -->
         <section class="products sec-padding">
-            <div class="container-fluid">
+            <div class="container">
                 <ul class="nav nav-tabs justify-content-center scroll" role="tablist">
                     <li role="presentation" class="active"><a href="#best-selling" role="tab" data-toggle="tab">Best
                             Selling</a>
@@ -156,7 +156,7 @@
                     <li role="presentation"><a href="#contact" role="tab" data-toggle="tab">Popular Products</a>
                     </li>
                 </ul>
-                <div class="container-fluid mt-5 ">
+                <div class="container mt-5 ">
                     <div class="tab-content">
                         <div id="best-selling" role="tabpanel" class="tab-pane fade in active">
                             <div class="row">
@@ -326,7 +326,7 @@
 
         <!-- categories -->
         <section class="categories sec-padding">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="main-title container text-center">
                     <h2 class="main">Categories</h2>
                     <h3 class="secondary">Categories</h3>
@@ -408,12 +408,12 @@
         </section>
         
         <!-- reciently-viwed -->
-        <section class="reciently-viwed container-fluid sec-padding">
+        <section class="reciently-viwed container sec-padding">
             <div class="main-title container text-center">
                 <h2 class="main">Recently Viewed</h2>
                 <h3 class="secondary">Recently Viewed</h3>
             </div>
-            <div class="container-fluid mt-5">
+            <div class="container mt-5">
                 <div class="row">
                     <!-- start-card -->
                     <div class="col-6 col-md-4 col-lg-3 main-card">
@@ -526,18 +526,24 @@
 
         <!-- our-clients -->
         <section class="our-clients sec-padding">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="main-title container text-center">
                     <h2 class="main">Our Clients</h2>
                     <h3 class="secondary">Brands</h3>
                 </div>
-                <div class="d-flex align-items-center justify-content-center gap-5 scroll mt-5">
-                    <a href="our-clients.html"><img src="images/client-1.png" alt="client-name"></a>
-                    <a href="#"><img src="images/client-2.png" alt="client-name"></a>
-                    <a href="#"><img src="images/client-1.png" alt="client-name"></a>
-                    <a href="#"><img src="images/client-2.png" alt="client-name"></a>
-                    <a href="#"><img src="images/client-1.png" alt="client-name"></a>
-                    <a href="#"><img src="images/client-2.png" alt="client-name"></a>
+                <div class="row justify-content-center align-items-center mt-5">
+                    <div class="col-6 col-md-3 mt-4">
+                        <a href="our-clients.html"><img src="images/client-1.png" alt="client-name"></a>
+                    </div>
+                    <div class="col-6  col-md-3  mt-4">
+                        <a href="our-clients.html"><img src="images/client-1.png" alt="client-name"></a>
+                    </div>
+                    <div class="col-6 col-md-3  mt-4">
+                        <a href="our-clients.html"><img src="images/client-1.png" alt="client-name"></a>
+                    </div>
+                    <div class="col-6 col-md-3  mt-4">
+                        <a href="our-clients.html"><img src="images/client-1.png" alt="client-name"></a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -625,19 +631,9 @@
                     }
                 ]
             });
-             $('.slick-prev').addClass('slick-prev-animate');
-             $('#click').change(function () {
-                // Toggle the class based on the checkbox state
-                $('.overlay').toggleClass('display', this.checked);
-            });
-           $('#click').change(function () {
-                if ($(this).is(':checked')) {
-                    $('nav ul').css('left', '0');
-                } else {
-                    // If you want to reset the style when unchecked
-                    $('nav ul').css('left', '-100%'); // Reset to default value or any other value you want
-                }
-            });
+            
+            // home slider arrow animation
+            $(".slick-prev").addClass("slick-prev-animate");
         });
     </script>
 </body>
