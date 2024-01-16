@@ -28,13 +28,15 @@ body {
   color: var(--basic);
 }
 
-.container {
+@media (min-width: 992px) {
+  .container {
   width: 1600px;
+}
 }
 
 .container-fluid {
-  padding-right: 45px;
-  padding-left: 45px;
+  padding-right: 60px;
+  padding-left: 60px;
 }
 
 /* main components */
@@ -80,6 +82,7 @@ a:hover {
 .main-btn:hover {
   background-color: var(--main-button-hover);
   border: 1px solid var(--main-button-hover);
+  color: var(--white);
 }
 
 .secondary-btn {
@@ -102,7 +105,7 @@ a:hover {
 }
 
 .f-sec-padding-top {
-  padding-top: 140px;
+  padding-top: 145px;
 }
 
 /* colors */
@@ -121,6 +124,14 @@ a:hover {
 .gray-high {
   color: var(--Gray-high);
 }
+
+.basic {
+  color: var(--basic);
+}
+
+.white-bg {
+  background-color: var(--white);
+}
 /* end-colors */
 
 /* font-weight */
@@ -134,14 +145,19 @@ a:hover {
   font-weight: 700;
 }
 
-
 .fs-16 {
   font-size: 16px;
+}
+.fs-14 {
+  font-size: 14px;
 }
 
 @media (max-width: 992px) {
   .top-sec-m {
     margin-top: 0;
+  }
+  .f-sec-padding-top {
+    padding-top: 20px;
   }
 }
 
@@ -151,6 +167,7 @@ a:hover {
     font-size: 14px;
     padding: 8px 18px;
   }
+  
   /* .sec-padding {
      padding-top: 20px;
     padding-bottom: 20px;
@@ -391,7 +408,7 @@ header nav .search-and-icons img {
 /* search for mobile */
 @media (max-width: 992px) {
   .mobile-search {
-    margin-top: 145px;
+    padding-top: 145px;
     text-align: center;
   }
 

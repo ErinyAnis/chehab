@@ -403,23 +403,23 @@
 
             // custom-select
             $('.select-header').click(function () {
-            $(this).next('.options').slideToggle();
+            
             });
             
             // arrow-animation
              $('.custom-select').click(function () {
-
+                $(this).find('.options').slideToggle();
                 $(this).find('.dropdown-icon').toggleClass('flipped');
+                var action = $(this).find('.options');
+                $(".options").not(action).hide("slow");
+                var $this = $(this);
+                if (!$this.is(e.target) && $this.has(e.target).length === 0) {
+                     $this.find('options').hide();
+                 }
             });
 
             // Close the dropdown when clicking outside of it
-            // $(document).on("click", function (event) {
-            //     var $trigger = $(".select-header");
-            //     if ($trigger !== event.target && !$trigger.has(event.target).length) {
-            //         $(".options").hide();
-            //         $('.dropdown-icon').removeClass('flipped');
-            //     }  
-            // });      
+            
         });      
     </script>
 

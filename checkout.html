@@ -104,28 +104,238 @@
     <section class="check-out sec-padding">
         <div class="container">
             <div class="row">
-                <div class="col-lg-8">
-                    <div class="login d-flex align-items-center">
+                <div class="col-xl-8">
+                    <div class="login d-flex align-items-center mb-4">
                         <div class="fw-500">Returning customer?</div>
                         <a href="#" class="red">Click here to login</a>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
-                        <label class="form-check-label" for="exampleRadios1">
-                            Default radio
-                        </label>
+                    <form action="#">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked>
+                            <label class="form-check-label" for="exampleRadios1">
+                                Home
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                            <label class="form-check-label" for="exampleRadios2">
+                                Office
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input add-new" type="radio" name="exampleRadios" id="exampleRadios3" value="option3">
+                            <label class="form-check-label" for="exampleRadios3">
+                                Add new address
+                            </label>
+                        </div>
+                    </form>
+
+                    <div class="form-container mt-4 hidden" id="add-new-address">
+                            <h4 class="red fw-700 mb-4">Shipping details</h4>
+                            <form action="#">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">First name*</label>
+                                            <input type="text" class="form-control" name="f_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
+                                        </div>
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">Phone Number *</label>
+                                            <input type="number" class="form-control" name="phone" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control" name="l_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter last name">
+                                        </div>
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">E-Mail</label>
+                                            <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your mail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mb-4 mb-md-5">
+                                    <label for="exampleInputPassword1" class="form-label">Address type ( Home - Work ....) *</label>
+                                    <input type="password" class="form-control" name="address" id="exampleInputPassword1" placeholder="Please enter address type">
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">City *</label>
+                                            <input type="text" class="form-control" name="city" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="City">
+                                        </div>
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">Building number</label>
+                                            <input type="number" class="form-control" name="build_num" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Building number">
+                                        </div>
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">Apartment Number</label>
+                                            <input type="number" class="form-control" name="apart_num" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter apartment number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">Street Name</label>
+                                            <input type="text" class="form-control" name="st_name" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter street name">
+                                        </div>
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">Floor</label>
+                                            <input type="number" class="form-control" name="floor" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter floor number">
+                                        </div>
+                                        <div class="mb-4 mb-md-5">
+                                            <label for="exampleInputEmail1" class="form-label">Landmark</label>
+                                            <input type="text" class="form-control" name="land_mark" id="exampleInputEmail1" aria-describedby="emailHelp"
+                                                placeholder="Enter landmark">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check">
+                                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                    <label class="form-check-label" for="exampleCheck1">Create an account?</label>
+                                </div>
+                            </form>
                     </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                        <label class="form-check-label" for="exampleRadios2">
-                            Second default radio
-                        </label>
+                    <div class="form-container mt-4">
+                        <h4 class="red fw-700 mb-4">Additional Information</h4>
+                        <form action="#">
+                            <div class="mb-3">
+                                <label for="exampleFormControlTextarea1" class="form-label">Order notes (Optional)</label>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="form-container mt-4 pt-5 mb-4">
+                        <form action="#">
+                            <div class="payment-method">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="payment-container p-4">
+                                            <div class="form-check">
+                                                <div class="d-flex align-items-center gap-3">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="visa" value="visa" checked>
+                                                   <div>
+                                                   <div>
+                                                        <label class="form-check-label" for="visa">
+                                                            Pay by Credit Card
+                                                        </label>
+                                                   </div>
+                                                    <div>
+                                                        <label class="form-check-label" for="visa">
+                                                            <img src="images/Cards.png" alt="visa">
+                                                        </label>
+                                                    </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="payment-container mb-3 mt-3 mt-md-0">
+                                            <div class="options">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="opt2" value="aman">
+                                                    <label class="form-check-label" for="opt2">
+                                                        Aman
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="payment-container">
+                                            <div class="options">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="radio" name="exampleRadios" id="opt3" value="mobile wallets">
+                                                    <label class="form-check-label" for="opt3">
+                                                        Mobile Wallets
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-check mt-4">
+                                    <input class="form-check-input" type="checkbox" id="accept" value="">
+                                    <label class="form-check-label" for="accept">
+                                        I’ve read and accept the <a href="#" class="red">terms & conditions*</a>
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
-                <div class="col-lg-4">
+                <div class="col-xl-4 position-relative">
+                    <div class="form-container white-bg">
+                        <div class="shopping-cart">
+                            <h4 class="red fw-700 mb-4">Shopping Cart</h4>
+                            <div class="d-flex align-items-center item-container">
+                                <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
+                                <div class="title fw-500 ms-3">
+                                    <span class="qty red">2X</span>
+                                    <div class="gray-high d-inline">High Pressure Washer
+                                    180 BAR 2800 WATT</div>
+                                    <div class="price basic">8900 EGP</div>
+                                </div>
+                                <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                            <div class="d-flex align-items-center item-container">
+                                <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
+                                <div class="title fw-500 ms-3">
+                                    <span class="qty red">2X</span>
+                                    <div class="gray-high d-inline">High Pressure Washer
+                                    180 BAR 2800 WATT</div>
+                                    <div class="price basic">8900 EGP</div>
+                                </div>
+                                <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                            <div class="d-flex align-items-center item-container">
+                                <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
+                                <div class="title fw-500 ms-3">
+                                    <span class="qty red">2X</span>
+                                    <div class="gray-high d-inline">High Pressure Washer
+                                    180 BAR 2800 WATT</div>
+                                    <div class="price basic">8900 EGP</div>
+                                </div>
+                                <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
+                            </div>
+                        </div>
+                        <div class="data-holder mt-5">
+                            <div class="d-flex justify-content-between fw-500">
+                                <div>
+                                    <div class="title gray-high mb-3">Sub Total</div>
+                                    <div class="title gray-high mb-3">Shipping Fees</div>
+                                    <div class="title gray-high mb-3">Discount</div>
+                                </div>
+                                <div>
+                                    <div class="mb-3 price">8,900 EGP</div>
+                                    <div class="mb-3 price">150 EGP</div>
+                                    <div class="red mb-3 price">(-150 EGP)</div>
+                                </div>
+                            </div>
+                            <!-- under-line -->
+                            <div class="pt-3 pb-4">
+                                <div class="line"></div>
+                            </div>
                 
+                            <div class="d-flex justify-content-between total">
+                                <div>
+                                    <div class="total-label red fw-700 mb-3">Total</div>
+                                </div>
+                                <div>
+                                    <div class="total-num red fw-700 mb-3">9,050 EGP</div>
+                                </div>
+                            </div>
+                            <div class="mt-4 text-center check-out">
+                                <a href="checkout.html" class="main-btn w-100 d-block">Checkout</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-            </div>
         </div>
     </section>
 
@@ -190,7 +400,20 @@
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
 <script src="js/index.js"></script>
-
+<script>
+    $(document).ready(function () {
+            // delete-btn
+        $('.delete-btn').on('click', function () {
+            // Find the parent row and remove it
+            $(this).closest('.shopping-cart .item-container').remove();
+        });
+            $('.add-new').change(function () {
+                // Hide form initially
+                $('#add-new-address').removeClass('hidden').addClass('visible');
+            });
+            
+        });
+</script>
 </body>
 
 </html>

@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="vendor/slick-carousel/css/slick-theme.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
@@ -42,46 +41,50 @@
             <hr>
 
             <nav class="container-fluid">
-                <div class="d-flex align-items-center justify-content-between">
-                    <a href="index.html" class="logo">
-                        <img src="images/logo.png" alt="logo">
-                    </a>
-                    <div class="ms-auto d-lg-none search-and-icons me-2">
-                        <a href="#">
-                            <img src="images/cart-icon-mobile.png" alt="cart">
-                        </a>
-                        <a href="#">
-                            <img src="images/profile-icon-mobile.png" alt="profile">
-                        </a>
-                    </div>
-                    <input type="checkbox" id="click">
-                    <label for="click" class="menu-btn d-lg-none">
-                        <span><i class="fa-solid fa-bars"></i></span>
-                    </label>
-
-                    <ul class="nav-links align-items-center">
-                        <li class="active"><a class="nav-link " href="index.html">Home</a></li>
-                        <li><a class="nav-link" href="categories.html">Categories</a></li>
-                        <li><a class="nav-link" href="brands.html">Brands</a></li>
-                        <li><a class="nav-link" href="about.html">About</a></li>
-                        <li><a class="nav-link" href="contact.html">Contact</a></li>
-                        <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
-                    </ul>
-                    <div class="ms-auto search-and-icons d-none d-lg-block">
-                        <div class="d-flex align-items-center">
-                            <div class="search-container">
-                                <form action="#">
-                                    <input type="search" placeholder="Search">
-                                    <button type="submit"><i class="fa fa-search"></i></button>
-                                </form>
-                            </div>
-                            <div class="d-flex align-items-center ms-3">
+                <div class="row">
+                    <div class="container">
+                        <div class="d-flex align-items-center justify-content-between">
+                            <a href="index.html" class="logo">
+                                <img src="images/logo.png" alt="logo">
+                            </a>
+                            <div class="ms-auto d-lg-none search-and-icons me-2">
                                 <a href="#">
-                                    <img src="images/profile-icon.png" alt="profile">
+                                    <img src="images/cart-icon-mobile.png" alt="cart">
                                 </a>
-                                <a href="shopping-card.html">
-                                    <img src="images/cart-icon.png" alt="cart">
+                                <a href="#">
+                                    <img src="images/profile-icon-mobile.png" alt="profile">
                                 </a>
+                            </div>
+                            <input type="checkbox" id="click">
+                            <label for="click" class="menu-btn d-lg-none">
+                                <span><i class="fa-solid fa-bars"></i></span>
+                            </label>
+                        
+                            <ul class="nav-links align-items-center">
+                                <li class="active"><a class="nav-link " href="index.html">Home</a></li>
+                                <li><a class="nav-link" href="categories.html">Categories</a></li>
+                                <li><a class="nav-link" href="brands.html">Brands</a></li>
+                                <li><a class="nav-link" href="about.html">About</a></li>
+                                <li><a class="nav-link" href="contact.html">Contact</a></li>
+                                <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
+                            </ul>
+                            <div class="ms-auto search-and-icons d-none d-lg-block">
+                                <div class="d-flex align-items-center">
+                                    <div class="search-container">
+                                        <form action="#">
+                                            <input type="search" placeholder="Search">
+                                            <button type="submit"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                    <div class="d-flex align-items-center ms-3">
+                                        <a href="account.html">
+                                            <img src="images/profile-icon.png" alt="profile">
+                                        </a>
+                                        <a href="shopping-card.html">
+                                            <img src="images/cart-icon.png" alt="cart">
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -147,180 +150,171 @@
 
         <!-- products -->
         <section class="products sec-padding">
-            <div class="container">
-                <ul class="nav nav-tabs justify-content-center scroll" role="tablist">
-                    <li role="presentation" class="active"><a href="#best-selling" role="tab" data-toggle="tab">Best
-                            Selling</a>
-                    </li>
-                    <li role="presentation"><a href="#new-arrivals" role="tab" data-toggle="tab">New Arrivals</a>
-                    <li role="presentation"><a href="#contact" role="tab" data-toggle="tab">Popular Products</a>
-                    </li>
-                </ul>
-                <div class="container mt-5 ">
-                    <div class="tab-content">
-                        <div id="best-selling" role="tabpanel" class="tab-pane fade in active">
-                            <div class="row">
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
-                                    </div>
+            <div class="container nav-container">
+                <div class="tabs">
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+                    <label for="tab1" class="tabs__label">Best Selling</label>
+                    <div class="tabs__content">
+                        <div class="row">
+                            <!-- start-card -->
+                            <div class="col-6 col-md-4 col-xl-3 main-card">
+                                <div class="mt-4">
+                                    <figure>
+                                        <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                        <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                            <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                            <a href="#" class="main-btn">Add to cart</a>
+                                        </div>
+                                    </figure>
+                                    <a href="#">
+                                        <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                        <div class="price red">620 EGP</div>
+                                        <div class="availability green">In Stock</div>
+                                    </a>
                                 </div>
-                                <!-- end-card -->
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- end-card -->
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- end-card -->
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- end-card -->
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- end-card -->
                             </div>
-                           
+                            <!-- end-card -->
+                            <!-- start-card -->
+                            <div class="col-6 col-md-4 col-xl-3 main-card">
+                                <div class="mt-4">
+                                    <figure>
+                                        <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                        <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                            <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                            <a href="#" class="main-btn">Add to cart</a>
+                                        </div>
+                                    </figure>
+                                    <a href="#">
+                                        <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                        <div class="price red">620 EGP</div>
+                                        <div class="availability green">In Stock</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end-card -->
+                            <!-- start-card -->
+                            <div class="col-6 col-md-4 col-xl-3 main-card">
+                                <div class="mt-4">
+                                    <figure>
+                                        <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                        <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                            <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                            <a href="#" class="main-btn">Add to cart</a>
+                                        </div>
+                                    </figure>
+                                    <a href="#">
+                                        <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                        <div class="price red">620 EGP</div>
+                                        <div class="availability green">In Stock</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end-card -->
+                            <!-- start-card -->
+                            <div class="col-6 col-md-4 col-xl-3 main-card">
+                                <div class="mt-4">
+                                    <figure>
+                                        <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                        <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                            <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                            <a href="#" class="main-btn">Add to cart</a>
+                                        </div>
+                                    </figure>
+                                    <a href="#">
+                                        <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                        <div class="price red">620 EGP</div>
+                                        <div class="availability green">In Stock</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end-card -->
+                            <!-- start-card -->
+                            <div class="col-6 col-md-4 col-xl-3 main-card">
+                                <div class="mt-4">
+                                    <figure>
+                                        <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                        <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                            <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                            <a href="#" class="main-btn">Add to cart</a>
+                                        </div>
+                                    </figure>
+                                    <a href="#">
+                                        <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                        <div class="price red">620 EGP</div>
+                                        <div class="availability green">In Stock</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end-card -->
                         </div>
-                        <div id="new-arrivals" role="tabpanel" class="tab-pane fade">
-                            <div class="row">
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+                    <label for="tab2" class="tabs__label">New Arrivals</label>
+                    <div class="tabs__content">
+                    <div class="row">
+                        <!-- start-card -->
+                        <div class="col-6 col-md-4 col-xl-3 main-card">
+                            <div class="mt-4">
+                                <figure>
+                                    <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                    <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                        <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                        <a href="#" class="main-btn">Add to cart</a>
                                     </div>
-                                </div>
-                                <!-- end-card -->
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <!-- end-card -->
+                                </figure>
+                                <a href="#">
+                                    <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                    <div class="price red">620 EGP</div>
+                                    <div class="availability green">In Stock</div>
+                                </a>
                             </div>
                         </div>
-
-                        <div id="contact" role="tabpanel" class="tab-pane fade">
-                            <!-- * desktop-cards * -->
-                            <div class="row">
-                                <!-- start-card -->
-                                <div class="col-6 col-md-4 col-lg-3 main-card">
-                                    <div class="mt-4">
-                                        <figure>
-                                            <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
-                                            <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
-                                                <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
-                                                <a href="#" class="main-btn">Add to cart</a>
-                                            </div>
-                                        </figure>
-                                        <a href="#">
-                                            <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
-                                            <div class="price red">620 EGP</div>
-                                            <div class="availability green">In Stock</div>
-                                        </a>
+                        <!-- end-card -->
+                        <!-- start-card -->
+                        <div class="col-6 col-md-4 col-xl-3 main-card">
+                            <div class="mt-4">
+                                <figure>
+                                    <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                    <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                        <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                        <a href="#" class="main-btn">Add to cart</a>
                                     </div>
-                                </div>
-                                <!-- end-card -->
+                                </figure>
+                                <a href="#">
+                                    <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                    <div class="price red">620 EGP</div>
+                                    <div class="availability green">In Stock</div>
+                                </a>
                             </div>
+                        </div>
+                        <!-- end-card -->
+                    </div>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab3">
+                    <label for="tab3" class="tabs__label">Popular Products</label>
+                    <div class="tabs__content">
+                        <div class="row">
+                            <!-- start-card -->
+                            <div class="col-6 col-md-4 col-xl-3 main-card">
+                                <div class="mt-4">
+                                    <figure>
+                                        <a href="#"><img src="images/main-card-1.png" alt="product-title"></a>
+                                        <div class="btn-container d-flex align-items-center gap-2 d-none d-lg-block">
+                                            <a href="#" class="secondary-btn">View item <i class="fa-solid fa-eye"></i></a>
+                                            <a href="#" class="main-btn">Add to cart</a>
+                                        </div>
+                                    </figure>
+                                    <a href="#">
+                                        <h3>SOCKET SET 1/4 INCH 46 PCS</h3>
+                                        <div class="price red">620 EGP</div>
+                                        <div class="availability green">In Stock</div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- end-card -->
                         </div>
                     </div>
                 </div>
-                
-
             </div>
         </section>
 
@@ -606,7 +600,6 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="vendor/jquery/jquery.js"></script>
     <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
     <script src="vendor/slick-carousel/js/slick.min.js"></script>

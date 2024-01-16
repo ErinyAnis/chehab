@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="vendor/slick-carousel/css/slick-theme.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
@@ -166,123 +165,126 @@
             </div>
         </div>
 
+        
+
         <!-- description  & reviews -->
         <div class="nav-container sec-padding">
             <div class="container">
-                <ul class="nav nav-tabs justify-content-center scroll" role="tablist">
-                    <li role="presentation" class="active"><a href="#description" role="tab" data-toggle="tab">Description</a>
-                    </li>
-                    <li role="presentation"><a href="#reviews" role="tab" data-toggle="tab">Reviews</a>
-                    <!-- <li role="presentation"><a href="#contact" role="tab" data-toggle="tab">Popular Products</a> -->
-                    </li>
-                </ul>
-                <div class="mt-5 ">
-                    <div class="tab-content">
-                        <div id="description" role="tabpanel" class="tab-pane fade in active">
-                            <div class="content-holder p-5">
-                                <div class="row">
-                                    <div class="col-lg-6">
-                                        <h2>Details</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur. Blandit est quis phasellus egestas consequat feugiat mollis fames
-                                            ipsum.
-                                
-                                            Hendrerit morbi mauris tincidunt nibh ipsum lectus sed lacinia. Vitae donec tempus ut tincidunt nisl
-                                            imperdiet eu.
-                                            Euismod egestas hac mauris eget odio amet. Aliquet sagittis amet blandit eget urna cras.
-                                
-                                            Elit magna pretium nibh curabitur enim non fringilla malesuada enim. Accumsan malesuada nam volutpat a
-                                            tellus. Semper ac
-                                            quam ligula cras cursus.
-                                
-                                            Aenean diam amet quisque nulla ornare at risus nibh. Rhoncus tellus volutpat lorem etiam sed ipsum nisl.</p>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <h2>Details</h2>
-                                        <table class="table table-striped">
-                                            <tbody>
-                                                <tr>
-                                                    <th scope="row">Model Number</th>
-                                                    <td>TH308268</td>
-                                
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Brand</th>
-                                                    <td class="red">Total</td>
-                                
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Origins</th>
-                                                    <td colspan="2">China</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Tool Holder</th>
-                                                    <td colspan="2">SDS-PLUS</td>
-                                                </tr>
-                                                <tr>
-                                                    <th scope="row">Max. impact energy (Joule)</th>
-                                                    <td colspan="2">2.5</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                <div class="tabs">
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
+                    <label for="tab1" class="tabs__label">Description</label>
+                    <div class="tabs__content mt-4">
+                        <div class="content-holder p-5">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <h2>Details</h2>
+                                    <p>Lorem ipsum dolor sit amet consectetur. Blandit est quis phasellus egestas consequat feugiat mollis fames
+                                        ipsum.
+                        
+                                        Hendrerit morbi mauris tincidunt nibh ipsum lectus sed lacinia. Vitae donec tempus ut tincidunt nisl
+                                        imperdiet eu.
+                                        Euismod egestas hac mauris eget odio amet. Aliquet sagittis amet blandit eget urna cras.
+                        
+                                        Elit magna pretium nibh curabitur enim non fringilla malesuada enim. Accumsan malesuada nam volutpat a
+                                        tellus. Semper ac
+                                        quam ligula cras cursus.
+                        
+                                        Aenean diam amet quisque nulla ornare at risus nibh. Rhoncus tellus volutpat lorem etiam sed ipsum nisl.
+                                    </p>
+                                </div>
+                                <div class="col-lg-6">
+                                    <h2>Details</h2>
+                                    <table class="table table-striped">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Model Number</th>
+                                                <td>TH308268</td>
+                        
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Brand</th>
+                                                <td class="red">Total</td>
+                        
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Origins</th>
+                                                <td colspan="2">China</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Tool Holder</th>
+                                                <td colspan="2">SDS-PLUS</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Max. impact energy (Joule)</th>
+                                                <td colspan="2">2.5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
                             </div>
                         </div>
-                        <div id="reviews" role="tabpanel" class="tab-pane fade">
-                            <div class="content-holder p-5">
-                                <h2>Customers Reviews</h2>
+                    </div>
+                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
+                    <label for="tab2" class="tabs__label">Reviews</label>
+                    <div class="tabs__content mt-4">
+                        <div class="content-holder p-5">
+                            <h2>Customers Reviews</h2>
+                            <!-- reviews -->
+                            <div class="row reviews">
                                 <!-- reviews -->
-                                <div class="row reviews">
-                                    <!-- reviews -->
-                                    <div class="col-lg-6">
-                                        <div class="review-container">
-                                            <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the
-                                                page,
-                                                make the changes.</p>
-                                            <div class="user">Kristin Watson</div>
-                                            <div class="date">March 14, 2021</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="review-container">
-                                            <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the
-                                                page,
-                                                make the changes.</p>
-                                            <div class="user">Kristin Watson</div>
-                                            <div class="date">March 14, 2021</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="review-container">
-                                            <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the
-                                                page,
-                                                make the changes.</p>
-                                            <div class="user">Kristin Watson</div>
-                                            <div class="date">March 14, 2021</div>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-6">
-                                        <div class="review-container">
-                                            <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just choose the
-                                                page,
-                                                make the changes.</p>
-                                            <div class="user">Kristin Watson</div>
-                                            <div class="date">March 14, 2021</div>
-                                        </div>
+                                <div class="col-lg-6">
+                                    <div class="review-container">
+                                        <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+                                            choose the
+                                            page,
+                                            make the changes.</p>
+                                        <div class="user">Kristin Watson</div>
+                                        <div class="date">March 14, 2021</div>
                                     </div>
                                 </div>
-                                <!-- add-review -->
-                                <div class="text-center mt-5">
-                                    <button class="main-btn" id="openModalBtn">Add Review</button>
+                                <div class="col-lg-6">
+                                    <div class="review-container">
+                                        <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+                                            choose the
+                                            page,
+                                            make the changes.</p>
+                                        <div class="user">Kristin Watson</div>
+                                        <div class="date">March 14, 2021</div>
+                                    </div>
                                 </div>
-                                <!-- modal -->
-                                <div id="modal" class="modal">
-                                    <div class="modal-content">
-                                        <div class="ms-auto">
-                                            <span class="close">&times;</span>
-                                        </div>
-                                        <h3 class="red text-center mt-0">Add Your review</h3>
-                                        <div>
+                                <div class="col-lg-6">
+                                    <div class="review-container">
+                                        <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+                                            choose the
+                                            page,
+                                            make the changes.</p>
+                                        <div class="user">Kristin Watson</div>
+                                        <div class="date">March 14, 2021</div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="review-container">
+                                        <p>You made it so simple. My new site is so much faster and easier to work with than my old site. I just
+                                            choose the
+                                            page,
+                                            make the changes.</p>
+                                        <div class="user">Kristin Watson</div>
+                                        <div class="date">March 14, 2021</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- add-review -->
+                            <div class="text-center mt-5">
+                                <button class="main-btn" id="openModalBtn">Add Review</button>
+                            </div>
+                            <!-- modal -->
+                            <div id="modal" class="modal">
+                                <div class="modal-content">
+                                    <div class="ms-auto">
+                                        <span class="close">&times;</span>
+                                    </div>
+                                    <h3 class="red text-center mt-0">Add Your review</h3>
+                                    <div>
                                         <h4>Your Rating</h4>
                                         <!-- Rating Stars Box -->
                                         <div class='rating-stars'>
@@ -307,18 +309,16 @@
                                         <form action="#">
                                             <textarea placeholder="Your Review" name="review" cols="30" rows="5"></textarea>
                                             <div class="text-end mt-3">
-                                            <button type="submit" class="main-btn ">Add Review</button>
+                                                <button type="submit" class="main-btn ">Add Review</button>
                                             </div>
                                         </form>
-                                        </div>
-                                    
                                     </div>
                                 </div>
                             </div>
                         </div>
-            
                     </div>
                 </div>
+               
             </div>
         </div>
     </section>
@@ -464,7 +464,6 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
 <script src="vendor/slick-carousel/js/slick.min.js"></script>
