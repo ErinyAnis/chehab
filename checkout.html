@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/slick-carousel/css/slick.css">
-    <link rel="stylesheet" href="vendor/slick-carousel/css/slick-theme.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <title>Checkout | Chehab</title>
@@ -39,58 +35,63 @@
             </div>
         </div>
         <hr>
-
+    
         <nav class="container-fluid">
-            <div class="d-flex align-items-center justify-content-between">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="logo">
-                </a>
-                <div class="ms-auto d-lg-none search-and-icons me-2">
-                    <a href="#">
-                        <img src="images/cart-icon-mobile.png" alt="cart">
-                    </a>
-                    <a href="#">
-                        <img src="images/profile-icon-mobile.png" alt="profile">
-                    </a>
-                </div>
-                <input type="checkbox" id="click">
-                <label for="click" class="menu-btn d-lg-none">
-                    <span><i class="fa-solid fa-bars"></i></span>
-                </label>
-
-                <ul class="nav-links align-items-center">
-                    <li><a class="nav-link " href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="categories.html">Categories</a></li>
-                    <li><a class="nav-link" href="brands.html">Brands</a></li>
-                    <li><a class="nav-link" href="about.html">About</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
-                </ul>
-                <div class="ms-auto search-and-icons d-none d-lg-block">
-                    <div class="d-flex align-items-center">
-                        <div class="search-container">
-                            <form action="#">
-                                <input type="search" placeholder="Search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
+            <div class="row">
+                <div class="container">
+                    <div class="d-flex align-items-center justify-content-between">
+                        <a href="index.html" class="logo">
+                            <img src="images/logo.png" alt="logo">
+                        </a>
+                        <div class="ms-auto d-lg-none search-and-icons me-2">
+                            <a href="#">
+                                <img src="images/cart-icon-mobile.png" alt="cart">
+                            </a>
+                            <a href="#">
+                                <img src="images/profile-icon-mobile.png" alt="profile">
+                            </a>
                         </div>
-                        <div class="d-flex align-items-center ms-3">
-                            <a href="#">
-                                <img src="images/profile-icon.png" alt="profile">
-                            </a>
-                            <a href="#">
-                                <img src="images/cart-icon.png" alt="cart">
-                            </a>
+                        <input type="checkbox" id="click">
+                        <label for="click" class="menu-btn d-lg-none">
+                            <span><i class="fa-solid fa-bars"></i></span>
+                        </label>
+    
+                        <ul class="nav-links align-items-center">
+                            <li><a class="nav-link " href="index.html">Home</a></li>
+                            <li><a class="nav-link" href="categories.html">Categories</a></li>
+                            <li><a class="nav-link" href="our-clients.html">Brands</a></li>
+                            <li><a class="nav-link" href="about.html">About</a></li>
+                            <li><a class="nav-link" href="contact.html">Contact</a></li>
+                            <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
+                        </ul>
+                        <div class="ms-auto search-and-icons d-none d-lg-block">
+                            <div class="d-flex align-items-center">
+                                <div class="search-container">
+                                    <form action="#">
+                                        <input type="search" placeholder="Search">
+                                        <button type="submit"><i class="fa fa-search"></i></button>
+                                    </form>
+                                </div>
+                                <div class="d-flex align-items-center ms-3">
+                                    <a href="account.html">
+                                        <img src="images/profile-icon.png" alt="profile">
+                                    </a>
+                                    <a href="shopping-card.html">
+                                        <img src="images/cart-icon.png" alt="cart">
+                                    </a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+    
         </nav>
         <div class="overlay"></div>
     </header>
 
     <section class="product-details f-sec-padding-top">
-        <div class="container-fluid">
+        <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item"><a href="index.html">Home</a></li>
@@ -101,7 +102,7 @@
     </section>
 
     <!-- checkout -->
-    <section class="check-out sec-padding">
+    <section class="check-out sec-padding pt-2">
         <div class="container">
             <div class="row">
                 <div class="col-xl-8">
@@ -135,60 +136,60 @@
                             <form action="#">
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">First name*</label>
                                             <input type="text" class="form-control" name="f_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="First name">
                                         </div>
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">Phone Number *</label>
                                             <input type="number" class="form-control" name="phone" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter phone number">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">Last Name *</label>
                                             <input type="text" class="form-control" name="l_name" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter last name">
                                         </div>
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">E-Mail</label>
                                             <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter your mail">
                                         </div>
                                     </div>
                                 </div>
-                                <div class="mb-4 mb-md-5">
+                                <div class="mb-4">
                                     <label for="exampleInputPassword1" class="form-label">Address type ( Home - Work ....) *</label>
                                     <input type="password" class="form-control" name="address" id="exampleInputPassword1" placeholder="Please enter address type">
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">City *</label>
                                             <input type="text" class="form-control" name="city" id="exampleInputEmail1" aria-describedby="emailHelp"
                                                 placeholder="City">
                                         </div>
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">Building number</label>
                                             <input type="number" class="form-control" name="build_num" id="exampleInputEmail1" aria-describedby="emailHelp"
                                                 placeholder="Building number">
                                         </div>
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">Apartment Number</label>
                                             <input type="number" class="form-control" name="apart_num" id="exampleInputEmail1" aria-describedby="emailHelp"
                                                 placeholder="Enter apartment number">
                                         </div>
                                     </div>
                                     <div class="col-lg-6">
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">Street Name</label>
                                             <input type="text" class="form-control" name="st_name" id="exampleInputEmail1" aria-describedby="emailHelp"
                                                 placeholder="Enter street name">
                                         </div>
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">Floor</label>
                                             <input type="number" class="form-control" name="floor" id="exampleInputEmail1" aria-describedby="emailHelp"
                                                 placeholder="Enter floor number">
                                         </div>
-                                        <div class="mb-4 mb-md-5">
+                                        <div class="mb-4">
                                             <label for="exampleInputEmail1" class="form-label">Landmark</label>
                                             <input type="text" class="form-control" name="land_mark" id="exampleInputEmail1" aria-describedby="emailHelp"
                                                 placeholder="Enter landmark">
@@ -270,68 +271,70 @@
                     </div>
                 </div>
                 <div class="col-xl-4 position-relative">
-                    <div class="form-container white-bg">
-                        <div class="shopping-cart">
-                            <h4 class="red fw-700 mb-4">Shopping Cart</h4>
-                            <div class="d-flex align-items-center item-container">
-                                <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
-                                <div class="title fw-500 ms-3">
-                                    <span class="qty red">2X</span>
-                                    <div class="gray-high d-inline">High Pressure Washer
-                                    180 BAR 2800 WATT</div>
-                                    <div class="price basic">8900 EGP</div>
+                    <div class="fixed">
+                        <div class="form-container white-bg">
+                            <div class="shopping-cart">
+                                <h4 class="red fw-700 mb-4">Shopping Cart</h4>
+                                <div class="d-flex align-items-center item-container">
+                                    <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
+                                    <div class="title fw-500 ms-3">
+                                        <span class="qty red">2X</span>
+                                        <div class="gray-high d-inline">High Pressure Washer
+                                            180 BAR 2800 WATT</div>
+                                        <div class="price basic">8900 EGP</div>
+                                    </div>
+                                    <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
                                 </div>
-                                <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                            <div class="d-flex align-items-center item-container">
-                                <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
-                                <div class="title fw-500 ms-3">
-                                    <span class="qty red">2X</span>
-                                    <div class="gray-high d-inline">High Pressure Washer
-                                    180 BAR 2800 WATT</div>
-                                    <div class="price basic">8900 EGP</div>
+                                <div class="d-flex align-items-center item-container">
+                                    <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
+                                    <div class="title fw-500 ms-3">
+                                        <span class="qty red">2X</span>
+                                        <div class="gray-high d-inline">High Pressure Washer
+                                            180 BAR 2800 WATT</div>
+                                        <div class="price basic">8900 EGP</div>
+                                    </div>
+                                    <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
                                 </div>
-                                <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                            <div class="d-flex align-items-center item-container">
-                                <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
-                                <div class="title fw-500 ms-3">
-                                    <span class="qty red">2X</span>
-                                    <div class="gray-high d-inline">High Pressure Washer
-                                    180 BAR 2800 WATT</div>
-                                    <div class="price basic">8900 EGP</div>
-                                </div>
-                                <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
-                            </div>
-                        </div>
-                        <div class="data-holder mt-5">
-                            <div class="d-flex justify-content-between fw-500">
-                                <div>
-                                    <div class="title gray-high mb-3">Sub Total</div>
-                                    <div class="title gray-high mb-3">Shipping Fees</div>
-                                    <div class="title gray-high mb-3">Discount</div>
-                                </div>
-                                <div>
-                                    <div class="mb-3 price">8,900 EGP</div>
-                                    <div class="mb-3 price">150 EGP</div>
-                                    <div class="red mb-3 price">(-150 EGP)</div>
+                                <div class="d-flex align-items-center item-container">
+                                    <div class="img-container"><img src="images/product-1.png" alt="product-title"></div>
+                                    <div class="title fw-500 ms-3">
+                                        <span class="qty red">2X</span>
+                                        <div class="gray-high d-inline">High Pressure Washer
+                                            180 BAR 2800 WATT</div>
+                                        <div class="price basic">8900 EGP</div>
+                                    </div>
+                                    <button class="delete-btn btn"><i class="fa-solid fa-trash"></i></button>
                                 </div>
                             </div>
-                            <!-- under-line -->
-                            <div class="pt-3 pb-4">
-                                <div class="line"></div>
-                            </div>
-                
-                            <div class="d-flex justify-content-between total">
-                                <div>
-                                    <div class="total-label red fw-700 mb-3">Total</div>
+                            <div class="data-holder mt-5">
+                                <div class="d-flex justify-content-between fw-500">
+                                    <div>
+                                        <div class="title gray-high mb-3">Sub Total</div>
+                                        <div class="title gray-high mb-3">Shipping Fees</div>
+                                        <div class="title gray-high mb-3">Discount</div>
+                                    </div>
+                                    <div>
+                                        <div class="mb-3 price">8,900 EGP</div>
+                                        <div class="mb-3 price">150 EGP</div>
+                                        <div class="red mb-3 price">(-150 EGP)</div>
+                                    </div>
                                 </div>
-                                <div>
-                                    <div class="total-num red fw-700 mb-3">9,050 EGP</div>
+                                <!-- under-line -->
+                                <div class="pt-3 pb-2">
+                                    <div class="line"></div>
                                 </div>
-                            </div>
-                            <div class="mt-4 text-center check-out">
-                                <a href="checkout.html" class="main-btn w-100 d-block">Checkout</a>
+                        
+                                <div class="d-flex justify-content-between total">
+                                    <div>
+                                        <div class="total-label red fw-700 mb-3">Total</div>
+                                    </div>
+                                    <div>
+                                        <div class="total-num red fw-700 mb-3">9,050 EGP</div>
+                                    </div>
+                                </div>
+                                <div class="mt-4 text-center check-out">
+                                    <a href="checkout.html" class="main-btn w-100 d-block">Checkout</a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -396,7 +399,6 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
 <script src="js/index.js"></script>

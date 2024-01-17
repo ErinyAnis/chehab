@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/slick-carousel/css/slick.css">
-    <link rel="stylesheet" href="vendor/slick-carousel/css/slick-theme.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <title>account | Chehab</title>
@@ -40,7 +36,7 @@
             </div>
         </div>
         <hr>
-
+    
         <nav class="container-fluid">
             <div class="row">
                 <div class="container">
@@ -60,11 +56,11 @@
                         <label for="click" class="menu-btn d-lg-none">
                             <span><i class="fa-solid fa-bars"></i></span>
                         </label>
-
+    
                         <ul class="nav-links align-items-center">
-                            <li class="active"><a class="nav-link " href="index.html">Home</a></li>
+                            <li><a class="nav-link " href="index.html">Home</a></li>
                             <li><a class="nav-link" href="categories.html">Categories</a></li>
-                            <li><a class="nav-link" href="brands.html">Brands</a></li>
+                            <li><a class="nav-link" href="our-clients.html">Brands</a></li>
                             <li><a class="nav-link" href="about.html">About</a></li>
                             <li><a class="nav-link" href="contact.html">Contact</a></li>
                             <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
@@ -90,7 +86,7 @@
                     </div>
                 </div>
             </div>
-
+    
         </nav>
         <div class="overlay"></div>
     </header>
@@ -109,7 +105,7 @@
         </div>
     </section>
 
-    <section class="product-details mt-4 f-sec-padding-top ">
+    <section class="product-details mt-4 f-sec-padding-top account-mb-padding">
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
@@ -146,7 +142,7 @@
                             </div>
                      
     
-                        <section id="tab-1" class="tab-body entry-content active active-content  col-lg-9">
+                        <section id="tab-1" class="tab-body entry-content active active-content col-lg-9">
                             <div class="content-holder">
                                 <h2 class="red fw-700">Orders</h2>
                                 <div class="order-table">
@@ -194,7 +190,7 @@
                             <div class="content-holder">
                                 <h2 class="red fw-700">Addresses</h2>
                                 <div class="addresses row">
-                                    <div class="col-6 col-lg-4">
+                                    <div class="col-6 col-lg-4 mb-3">
                                         <div class="address">
                                             <div class="top-holder">
                                                 <h3 class="fw-600">Office</h3>
@@ -206,7 +202,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-6 col-lg-4">
+                                    <div class="col-6 col-lg-4 mb-3">
                                         <div class="address">
                                             <div class="top-holder">
                                                 <h3 class="fw-600">Office</h3>
@@ -218,7 +214,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-lg-4">
+                                    <div class="col-lg-4 mb-3">
                                         <div class="address">
                                             <div class="top-holder">
                                                 <h3 class="fw-600">Office</h3>
@@ -340,13 +336,12 @@
 
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
-<script src="vendor/slick-carousel/js/slick.min.js"></script>
 <script src="js/index.js"></script>
 
 <script>
+    // side nav tabs
     (function ($) {
             // Variables
             const $tabLink = $('#tabs-section .tab-link');
@@ -393,7 +388,7 @@
         // delete-btn
         $('.remove-btn').on('click', function () {
             // Find the parent row and remove it
-            $(this).closest('.addresses .col-md-4').remove();
+            $(this).closest('.addresses .col-lg-4').remove();
         });
     });
 </script>

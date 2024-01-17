@@ -4,12 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="vendor/slick-carousel/css/slick.css">
-    <link rel="stylesheet" href="vendor/slick-carousel/css/slick-theme.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="/images/logo.png">
     <title>Shopping-cart | Chehab</title>
@@ -17,77 +13,82 @@
 
 <body>
     <h1 class="d-none"></h1>
-    <header class="w-100 position-absolute">
-        <div class="container">
-            <div class="top-header row align-items-center">
-                <div class="col-6">
-                    <div class="d-flex align-items-center justify-content-end mail">
-                        <img class="me-1" src="images/envelope.png" alt="envelope-icon">
-                        <div>support@example.com</div>
-                    </div>
+<header class="w-100 position-absolute">
+    <div class="container">
+        <div class="top-header row align-items-center">
+            <div class="col-6">
+                <div class="d-flex align-items-center justify-content-end mail">
+                    <img class="me-1" src="images/envelope.png" alt="envelope-icon">
+                    <div>support@example.com</div>
                 </div>
-                <div class="col-6 right-side d-flex">
-                    <div class="lang-button-container d-flex align-items-center pe-2">
-                        <img class="me-1" src="images/lang-icon.png" alt="language">
-                        <a href="#" class="language-button">English</a>
+            </div>
+            <div class="col-6 right-side d-flex">
+                <div class="lang-button-container d-flex align-items-center pe-2">
+                    <img class="me-1" src="images/lang-icon.png" alt="language">
+                    <a href="#" class="language-button">English</a>
+                </div>
+                <div class="social">
+                    <a href="#"><img src="images/instagram-icon.png" alt="instagram-icon"></a>
+                    <a href="#"><img src="images/facebook-icon.png" alt="instagram-icon"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+
+    <nav class="container-fluid">
+        <div class="row">
+            <div class="container">
+                <div class="d-flex align-items-center justify-content-between">
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="logo">
+                    </a>
+                    <div class="ms-auto d-lg-none search-and-icons me-2">
+                        <a href="#">
+                            <img src="images/cart-icon-mobile.png" alt="cart">
+                        </a>
+                        <a href="#">
+                            <img src="images/profile-icon-mobile.png" alt="profile">
+                        </a>
                     </div>
-                    <div class="social">
-                        <a href="#"><img src="images/instagram-icon.png" alt="instagram-icon"></a>
-                        <a href="#"><img src="images/facebook-icon.png" alt="instagram-icon"></a>
+                    <input type="checkbox" id="click">
+                    <label for="click" class="menu-btn d-lg-none">
+                        <span><i class="fa-solid fa-bars"></i></span>
+                    </label>
+
+                    <ul class="nav-links align-items-center">
+                        <li><a class="nav-link " href="index.html">Home</a></li>
+                        <li><a class="nav-link" href="categories.html">Categories</a></li>
+                        <li><a class="nav-link" href="our-clients.html">Brands</a></li>
+                        <li><a class="nav-link" href="about.html">About</a></li>
+                        <li><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
+                    </ul>
+                    <div class="ms-auto search-and-icons d-none d-lg-block">
+                        <div class="d-flex align-items-center">
+                            <div class="search-container">
+                                <form action="#">
+                                    <input type="search" placeholder="Search">
+                                    <button type="submit"><i class="fa fa-search"></i></button>
+                                </form>
+                            </div>
+                            <div class="d-flex align-items-center ms-3">
+                                <a href="account.html">
+                                    <img src="images/profile-icon.png" alt="profile">
+                                </a>
+                                <a href="shopping-card.html">
+                                    <img src="images/cart-icon.png" alt="cart">
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <hr>
 
-        <nav class="container-fluid">
-            <div class="d-flex align-items-center justify-content-between">
-                <a href="index.html" class="logo">
-                    <img src="images/logo.png" alt="logo">
-                </a>
-                <div class="ms-auto d-lg-none search-and-icons me-2">
-                    <a href="#">
-                        <img src="images/cart-icon-mobile.png" alt="cart">
-                    </a>
-                    <a href="#">
-                        <img src="images/profile-icon-mobile.png" alt="profile">
-                    </a>
-                </div>
-                <input type="checkbox" id="click">
-                <label for="click" class="menu-btn d-lg-none">
-                    <span><i class="fa-solid fa-bars"></i></span>
-                </label>
-
-                <ul class="nav-links align-items-center">
-                    <li><a class="nav-link " href="index.html">Home</a></li>
-                    <li><a class="nav-link" href="categories.html">Categories</a></li>
-                    <li><a class="nav-link" href="brands.html">Brands</a></li>
-                    <li><a class="nav-link" href="about.html">About</a></li>
-                    <li><a class="nav-link" href="contact.html">Contact</a></li>
-                    <li><a class="nav-link d-lg-none" href="about.html">اللغة العربية</a></li>
-                </ul>
-                <div class="ms-auto search-and-icons d-none d-lg-block">
-                    <div class="d-flex align-items-center">
-                        <div class="search-container">
-                            <form action="#">
-                                <input type="search" placeholder="Search">
-                                <button type="submit"><i class="fa fa-search"></i></button>
-                            </form>
-                        </div>
-                        <div class="d-flex align-items-center ms-3">
-                            <a href="#">
-                                <img src="images/profile-icon.png" alt="profile">
-                            </a>
-                            <a href="#">
-                                <img src="images/cart-icon.png" alt="cart">
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <div class="overlay"></div>
-    </header>
+    </nav>
+    <div class="overlay"></div>
+</header>
 
     <section class="product-details f-sec-padding-top">
         <div class="container-fluid">
@@ -298,7 +299,6 @@
 </body>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
 <script src="vendor/slick-carousel/js/slick.min.js"></script>
