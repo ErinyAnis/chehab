@@ -21,6 +21,7 @@
     .table-container {
         overflow: auto;
     }
+    
     @media (max-width: 992px) {
         .price-holder {
             padding: 0 10% !important;
@@ -29,19 +30,48 @@
             padding: 5% 10% !important;
         }
     }
+    @media (max-width: 767px) {
+        .fs-16 {
+        font-size: 16px !important;
+        }
+        .fs-18 {
+        font-size: 18px !important;
+        }
+        .fs-14 {
+            font-size: 14px !important;
+        }
+        .fs-20 {
+            font-size: 20px !important;
+        }
+        .fs-22 {
+            font-size: 22px !important;
+        }
+        .title-img {
+            height: 30px  !important;
+        }
+        .logo {
+            height: 55px !important;
+        }
+        .secondary-img {
+            height: 140px !important;
+        }
+        a {
+            font-size: 14px;
+        }
+    }
 </style>
 <body style="margin: 0;">
     <div>
         <div style="background-color: #F5F4F4; padding: 3% 10%;">
-            <img src="images/email-logo.png" alt="Chehab Egypt" style="height: 60px;">
+            <img src="images/email-logo.png" alt="Chehab Egypt" style="height: 60px;" class="logo">
             <div style="display: flex; align-items: center; justify-content: space-between;">
-                <img src="images/mail-your-order-title.png" alt="Your Order" style="height: 35px;">
-                <img src="images/mail-order-img.png" alt="image" style="height: 160px;">
+                <img src="images/mail-your-order-title.png" alt="Your Order" style="height: 35px;" class="title-img">
+                <img src="images/mail-order-img.png" alt="image" style="height: 160px;" class="secondary-img">
             </div>
         </div>
         <div style="padding: 3% 10%;">
-            <h1 style="color: #1D1B1B; font-weight: 700; font-size: 24px; margin-bottom: 3px;">Dear , Ahmed</h1>
-            <p style="color: #808080; font-weight: 500; margin-top: 0; font-size: 18px;">Your order NEGG1023456789524 has been received and is currently being processed by our crew. We will let you know when
+            <h1 style="color: #1D1B1B; font-weight: 700; font-size: 24px; margin-bottom: 3px;" class="fs-20">Dear , Ahmed</h1>
+            <p style="color: #808080; font-weight: 500; margin-top: 0; font-size: 18px;" class="fs-16">Your order NEGG1023456789524 has been received and is currently being processed by our crew. We will let you know when
             your order is on way to you so you can really get excited about it</p>
             <div style="text-align: center; margin-top: 30px;">
                 <a href="#" style="padding: 10px 30px; background-color: #EC1A23; border-radius: 5px; text-decoration: none; color: #FEFEFE; transition: 0.3s;">Check Order Status</a>
@@ -51,11 +81,11 @@
             </div>
             <div>
                 <div style="border: 1px solid #C4C4C4; padding: 2% 5%; border-radius: 5px;">
-                    <h2 style="color: #EC1A23; font-size: 24px;">Orders</h2>
+                    <h2 style="color: #EC1A23; font-size: 24px;" class="fs-20">Orders</h2>
                     <div class="table-container">
                         <table style="border-collapse: collapse; width: 100%; text-align: center;">
                             <thead>
-                                <tr style="border-bottom: 2px solid #A2A2A2; font-weight: 700; font-size: 20px;">
+                                <tr style="border-bottom: 2px solid #A2A2A2; font-weight: 700; font-size: 20px;" class="fs-18">
                                     <th style="padding: 10px;">Image</th>
                                     <th style="padding: 10px;">Product</th>
                                     <th style="padding: 10px;">Price</th>
@@ -64,7 +94,7 @@
                                 </tr>
                             </thead>
                             <tbody>
-                                <tr style="border-bottom: 2px solid #A2A2A2;">
+                                <tr style="border-bottom: 2px solid #A2A2A2;" class="fs-14">
                                     <td style="padding: 10px;">
                                         <div style="border: 1px solid #EC1A23; padding: 5px;"><img src="images/email-product-1.png"
                                                 alt="product-title"></div>
@@ -78,16 +108,16 @@
                         </table>
                     </div>
                 </div>
-                <div class="price-holder" style="padding: 0 20%; margin-top: 2%;">
+                <div class="price-holder" style="padding: 0 20%; margin-top: 3%;">
                     <div class="price" style="border: 1px solid #C4C4C4; padding: 5% 20%; border-radius: 5px; ">
                         <div style="display: flex; align-items: center; justify-content: space-between;">
                             <div>
-                                <div style="color: #646363; font-weight: 500;">Sub Total</div>
-                                <div style="color: #646363; font-weight: 500;">Shipping Fees</div>
+                                <div style="color: #646363; font-weight: 500;" class="fs-14">Sub Total</div>
+                                <div style="color: #646363; font-weight: 500;" class="fs-14">Shipping Fees</div>
                             </div>
                             <div>
-                                <div style="color: #1D1B1B; font-weight: 500; font-size: 18px;">17600 EGP</div>
-                                <div style="color: #1D1B1B; font-weight: 500; font-size: 18px;">200 EGP</div>
+                                <div style="color: #1D1B1B; font-weight: 500; font-size: 18px;" class="fs-16">17600 EGP</div>
+                                <div style="color: #1D1B1B; font-weight: 500; font-size: 18px;" class="fs-16">200 EGP</div>
                             </div>
                         </div>
                     </div>
@@ -97,24 +127,24 @@
                 <hr style="border-color: #dcdcdcb3;">
             </div>
             <div>
-                <h3 style="font-size: 24px; font-weight: 700;">If you have any questions, please <span style="color: #EC1A23;">Contact us</span></h3>
+                <h3 style="font-size: 24px; font-weight: 700;" class="fs-22">If you have any questions, please <span style="color: #EC1A23;">Contact us</span></h3>
                 <div style="margin-top: 10px; padding-left: 3%;">
-                    <h4 style="color: #EC1A23; font-weight: 700; font-size: 22px; margin-bottom: 3px;">Contact Information</h4>
-                    <div style="display: flex; align-items: center;">
-                        <div style="color: #1D1B1B; font-weight: 700; font-size: 18px;">Order Number :</div>
-                        <div style="font-weight: 500; font-size: 18px; color: #646363; margin-left: 12px;">NEGG1023456789524</div>
+                    <h4 style="color: #EC1A23; font-weight: 700; font-size: 22px; margin-bottom: 3px;" class="fs-20">Contact Information</h4>
+                    <div style="display: flex; align-items: center; font-size: 18px;" class="fs-16">
+                        <div style="color: #1D1B1B; font-weight: 700;">Order Number :</div>
+                        <div style="font-weight: 500; color: #646363; margin-left: 12px;">NEGG1023456789524</div>
                     </div>
-                    <div style="display: flex; align-items: center;">
-                        <div style="color: #1D1B1B; font-weight: 700; font-size: 18px;">Date :</div>
-                        <div style="font-weight: 500; font-size: 18px; color: #646363; margin-left: 12px;">17-1-2024</div>
+                    <div style="display: flex; align-items: center; font-size: 18px;" class="fs-16">
+                        <div style="color: #1D1B1B; font-weight: 700;">Date :</div>
+                        <div style="font-weight: 500; color: #646363; margin-left: 12px;">17-1-2024</div>
                     </div>
-                    <div style="display: flex; align-items: center;">
-                        <div style="color: #1D1B1B; font-weight: 700; font-size: 18px;">Phone :</div>
-                        <div style="font-weight: 500; font-size: 18px; color: #646363; margin-left: 12px;">(+2) (02) 2 59 18 346</div>
+                    <div style="display: flex; align-items: center; font-size: 18px;" class="fs-16">
+                        <div style="color: #1D1B1B; font-weight: 700;">Phone :</div>
+                        <div style="font-weight: 500;color: #646363; margin-left: 12px;">(+2) (02) 2 59 18 346</div>
                     </div>
-                    <div style="display: flex; align-items: center;">
-                        <div style="color: #1D1B1B; font-weight: 700; font-size: 18px;">E-mail :</div>
-                        <div style="font-weight: 500; font-size: 18px; color: #646363; margin-left: 12px;">info@chehabegypt.com</div>
+                    <div style="display: flex; align-items: center; font-size: 18px;" class="fs-16">
+                        <div style="color: #1D1B1B; font-weight: 700;">E-mail :</div>
+                        <div style="font-weight: 500; color: #646363; margin-left: 12px;">info@chehabegypt.com</div>
                     </div>
                 </div>
             </div>
@@ -122,8 +152,8 @@
                 <hr style="border-color: #dcdcdcb3;">
             </div>
             <div>
-                <h3 style="color: #1D1B1B; font-weight: 700; font-size: 24px; margin-bottom: 0;">Thank You</h3>
-                <div style="font-size: 22px; color: #646363;">The chehab team</div>
+                <h3 style="color: #1D1B1B; font-weight: 700; font-size: 24px; margin-bottom: 0;" class="fs-22">Thank You</h3>
+                <div style="font-size: 22px; color: #646363;" class="fs-20">The chehab team</div>
             </div>
         </div>
     </div>
