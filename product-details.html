@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <title>Product-details | Chehab</title>
 </head>
 
@@ -464,8 +464,6 @@
 
 </body>
 
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
 <script src="vendor/slick-carousel/js/slick.min.js"></script>
@@ -480,15 +478,6 @@
             autoplay: true,
             dots: false,
             arrows: true,
-            responsive: [
-                {
-                    breakpoint: 768, // Mobile breakpoint
-                    settings: {
-                        slidesToShow: 1,  // Display 1 slide on mobile
-                        infinite: false,  // Disable infinite loop on mobile
-                    }
-                }
-            ]
         });
 
         // counter
@@ -508,6 +497,78 @@
             counterValue++;
             updateCounter();
         });
+
+        // product-details-modal
+        $("#openModalBtn").click(function () {
+            $("#modal").fadeIn();
+        });
+
+        // Close modal when the close button or outside the modal is clicked
+        $(".close, .modal").click(function () {
+            $("#modal").fadeOut();
+        });
+
+        // Prevent modal from closing when clicking inside the modal content
+        $(".modal-content").click(function (event) {
+            event.stopPropagation();
+        });
+        // end-modal
+
+        // review-stars
+        /* 1. Visualizing things on Hover - See next part for action on click */
+        $("#stars li")
+            .on("mouseover", function () {
+                var onStar = parseInt($(this).data("value"), 10); // The star currently mouse on
+
+                // Now highlight all the stars that's not after the current hovered star
+                $(this)
+                    .parent()
+                    .children("li.star")
+                    .each(function (e) {
+                        if (e < onStar) {
+                            $(this).addClass("hover");
+                        } else {
+                            $(this).removeClass("hover");
+                        }
+                    });
+            })
+            .on("mouseout", function () {
+                $(this)
+                    .parent()
+                    .children("li.star")
+                    .each(function (e) {
+                        $(this).removeClass("hover");
+                    });
+            });
+
+        /* 2. Action to perform on click */
+        $("#stars li").on("click", function () {
+            var onStar = parseInt($(this).data("value"), 10); // The star currently selected
+            var stars = $(this).parent().children("li.star");
+
+            for (i = 0; i < stars.length; i++) {
+                $(stars[i]).removeClass("selected");
+            }
+
+            for (i = 0; i < onStar; i++) {
+                $(stars[i]).addClass("selected");
+            }
+
+            // JUST RESPONSE (Not needed)
+            var ratingValue = parseInt(
+                $("#stars li.selected").last().data("value"),
+                10
+            );
+            var msg = "";
+            if (ratingValue > 1) {
+                msg = "Thanks! You rated this " + ratingValue + " stars.";
+            } else {
+                msg =
+                    "We will improve ourselves. You rated this " + ratingValue + " stars.";
+            }
+            responseMessage(msg);
+        });
+        // end-review-stars
     });
 </script>
 

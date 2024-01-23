@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <title>Contact-us | Chehab</title>
 </head>
 
@@ -110,6 +110,7 @@
             </div>
             
             <div class="row mt-5">
+                <!-- form -->
                 <div class="col-lg-7">
                     <div class="title">
                         <h2 class="red fw-500">Let’s keep in touch..</h2>
@@ -120,31 +121,31 @@
                             rhoncus
                             mattis.</p>
                     </div>
-                    <form action="#">
+                    <form action="#" id="contact-form">
                         <div class="row">
                             <div class="col-lg-6">
-                                <div class="mb-3">
+                                <div class="mb-4">
                                     <input type="text" class="form-control" name="name" placeholder="Your name *" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="mb-3">
+                                <div class="mb-4">
                                     <input type="email" class="form-control" name="email" placeholder="Email *" required>
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="mb-3">
-                                    <input type="text" class="form-control" name="sybject" placeholder="Subject">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" name="subject" placeholder="Subject">
                                 </div>
                             </div>
                             <div class="col-lg-6">
-                                <div class="mb-3">
+                                <div class="mb-4">
                                     <input type="password" class="form-control" name="password" placeholder="Password *" required>
                                 </div>
                             </div>
                            <div class="textaria-container col-12">
-                                <div class="mb-3">
-                                    <textarea class="form-control" placeholder="Your Message" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <div class="mb-4">
+                                    <textarea class="form-control" placeholder="Your Message" id="message" rows="3"></textarea>
                                 </div>
                            </div>
                            <div class="ps-4 mt-3">
@@ -335,10 +336,50 @@
 
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
 <script src="js/index.js"></script>
+<script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#contact-form").validate({
+            rules: {
+                name: {
+                    required: true,
+                    minlength: 2,
+                },
+                email: {
+                    required: true,
+                    email: true 
+                },
+                password: {
+                    required: true,
+                    minlength: 8
+                },
+            },
+            messages: {
+                name: {
+                    required: "please enter your name",
+                    minlength: "first name at least 2 characters"
+                },
+                email: {
+                    required: "please enter your email address",
+                    email: "email address must be in email format"
+                },
+                password: {
+                    required: "please enter your password",
+                    minlength: "Your password must be at least 8 characters long"
+                },
+            },
+
+            submitHandler: function (form) {
+
+                $(form).submit();
+            }
+        });
+    });
+</script>
 
 </body>
 

@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="vendor/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
     <title>login | Chehab</title>
 </head>
 
@@ -101,7 +101,7 @@
         </div>
     </section>
 
-    <!-- checkout -->
+    <!-- login-form -->
     <section class="login-page check-out sec-padding">
         <div class="container">   
             <div class="title-container text-center  mb-4">
@@ -110,22 +110,20 @@
             </div>
 
             <div class="form-container mt-5 m-auto" id="add-new-address">
-                <form action="#">  
+                <form action="#" id="login-form">  
                     <div class="mb-3 mb-md-4">
-                        <label for="exampleInputEmail1" class="form-label">Email</label>
-                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" id="email"
                             placeholder="Email">
                     </div>
                     <div class="mb-3 mb-md-4">
-                        <label for="exampleInputEmail1" class="form-label">Password</label>
-                        <input type="password" class="form-control" name="password" id="exampleInputEmail1"
-                            aria-describedby="emailHelp" placeholder="Password">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password" id="password" placeholder="Password">
                     </div>
-                    
                     <div class="d-flex align-items-center justify-content-between">
                         <div class="form-check remember-me">
-                            <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                            <label class="form-check-label" for="exampleCheck1">Remember me</label>
+                            <input type="checkbox" class="form-check-input" id="remember">
+                            <label class="form-check-label" for="remember">Remember me</label>
                         </div>
                         <div class="forgot-password fs-14">
                             <a href="forgot-password.html">Forgot password?</a>
@@ -195,10 +193,42 @@
 
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script src="vendor/jquery/jquery.js"></script>
 <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
 <script src="js/index.js"></script>
+<script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#login-form").validate({
+            rules: {
+                email: {
+                    required: true,
+                    email: true
+                },
+                password: {
+                    required: true,
+                    minlength: 8
+                },
+            },
+            messages: {
+                email: {
+                    required: "please enter your email address",
+                    email: "email address must be in email format"
+                },
+                password: {
+                    required: "please enter your password",
+                    minlength: "Your password must be at least 8 characters long"
+                },
+            },
+
+            submitHandler: function (form) {
+
+                $(form).submit();
+            }
+        });
+    });
+</script>
 
 </body>
 

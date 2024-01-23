@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="vendor/bootstrap-5.3.0-dist/css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="images/logo.png">
-    <title>Error | Chehab</title>
+    <title>edit-account-details | Chehab</title>
 </head>
 
 <body>
@@ -36,7 +36,7 @@
             </div>
         </div>
         <hr>
-    
+
         <nav class="container-fluid">
             <div class="row">
                 <div class="container">
@@ -56,7 +56,7 @@
                         <label for="click" class="menu-btn d-lg-none">
                             <span><i class="fa-solid fa-bars"></i></span>
                         </label>
-    
+
                         <ul class="nav-links align-items-center">
                             <li><a class="nav-link " href="index.html">Home</a></li>
                             <li><a class="nav-link" href="categories.html">Categories</a></li>
@@ -86,7 +86,7 @@
                     </div>
                 </div>
             </div>
-    
+
         </nav>
         <div class="overlay"></div>
     </header>
@@ -105,19 +105,87 @@
         </div>
     </section>
 
-    <section class="error f-sec-padding-top sec-padding account-mb-padding">
-        <div class="container text-center">
-            <h2 class="fw-600">404</h2>
-            <h3 class="gray-middle fw-500">Oops! Page Not Found!</h3>
-            <div class="links d-flex align-items-center justify-content-center gap-5">
-                <a href="index.html" class="main-btn">Go Back To Home</a>
-                <a href="index.html" class="cont-shopping">Continue Shopping</a>
-            </div>
+    <section class="product-details mt-4 f-sec-padding-top account-mb-padding">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Account</li>
+                </ol>
+            </nav>
         </div>
     </section>
 
+    <section class="account tabs-wrapper">
+        <div class="container">
+            <div class="tabs-block">
+                <div id="tabs-section" class="tabs row justify-content-center">
+                    <div class="mb-4 col-lg-3">
+                        <ul class="tab-head">
+                            <li>
+                                <a href="account-orders.html" class="tab-link"></span>
+                                    <span class="tab-label">Orders</span></a>
+                            </li>
+                            <li>
+                                <a href="account-address.html" class="tab-link">
+                                    <span class="tab-label">Addresses</span></a>
+                            </li>
+                            <li>
+                                <a href="account-edit-account-details.html" class="tab-link active">
+                                    <span class="tab-label">Edit Account Details</span></a>
+                            </li>
+                            <li>
+                                <form action="#">
+                                    <div class="tab-link">
+                                        <button type="submit" class="log-out-btn tab-label">Logout</button>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
 
+                    <section class="tab-body entry-content active active-content col-lg-9">
+                        <div class="content-holder">
+                            <h2 class="red fw-700">Account Details</h2>
+                            <form action="#" id="edit-account">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="fName" class="form-label">First name*</label>
+                                            <input type="text" class="form-control" name="fName" id="fName" placeholder="First name">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="phone" class="form-label">Phone Number *</label>
+                                            <input type="number" class="form-control" name="phone"
+                                                id="phone"
+                                                placeholder="Enter phone number">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6">
+                                        <div class="mb-4">
+                                            <label for="lastName" class="form-label">Last Name *</label>
+                                            <input type="text" class="form-control" name="lastName"
+                                                id="lastName"
+                                                placeholder="Enter last name">
+                                        </div>
+                                        <div class="mb-4">
+                                            <label for="exampleInputPassword1" class="form-label">Email</label>
+                                            <input type="email" class="form-control" name="email"
+                                                id="exampleInputPassword1" placeholder="Enter your mail">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="text-center mt-2">
+                                    <button type="submit" class="main-btn ps-5 pe-5">Update</button>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
 
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- footer -->
     <footer>
@@ -167,19 +235,73 @@
             <div class="line mb-3"></div>
             <div class="copy-right">
                 <div class="text-center">
-                    Copyright © 2023 AMZ Tools Egypt, Developed By <a href="www.innovationscope.com">Innovation Scope</a>
+                    Copyright © 2023 AMZ Tools Egypt, Developed By <a href="www.innovationscope.com">Innovation
+                        Scope</a>
                 </div>
             </div>
         </div>
     </footer>
-    
-    </body>
 
-    <script src="vendor/jquery/jquery.js"></script>
-    <script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
-    <script src="js/index.js"></script>
-    
+</body>
 
-    </body>
-    
-    </html>
+<script src="vendor/jquery/jquery.js"></script>
+<script src="vendor/bootstrap-5.3.0-dist/js/bootstrap.js"></script>
+<script src="js/index.js"></script>
+<script src="vendor/jquery-validate/jquery.validate.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+        $("#edit-account").validate({
+            rules: {
+                fName: {
+                    required: true,
+                    minlength: 2,
+                },
+                lastName: {
+                    required: true,
+                    minlength: 2,
+                },
+                phone: {
+                    required: true,
+                    number: true,
+                },
+
+                email: {
+                    required: true,
+                    email: true
+                },
+            },
+            messages: {
+                fName: {
+                    required: "please enter your first name",
+                    minlength: "first name at least 2 characters"
+                },
+                lastName: {
+                    required: "please enter your last name",
+                    minlength: "last name at least 2 characters"
+                },
+
+                email: {
+                    required: "please enter your email",
+                    email: "Your email address must be in the format of name@domain.com"
+                },
+
+                phone: {
+                    required: "please enter your phone number"
+                }
+            },
+
+
+            submitHandler: function (form) {
+
+                $(form).submit();
+            }
+        });
+    });
+</script>
+
+
+
+</body>
+
+</html>

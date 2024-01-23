@@ -101,7 +101,7 @@
             </ol>
         </nav>
         <div class="d-flex align-items-center justify-content-between">
-            <div class="custom-select" id="dropdown">
+            <!-- <div class="custom-select" id="dropdown">
                 <div class="select-header">
                     <span>Sort by popularity</span>
                     <div class="arrow ms-1"><i class="fa-solid fa-angle-down dropdown-icon"></i></div>
@@ -113,6 +113,16 @@
                     <li>Price (min - max )</li>
                     <li>Price (max - min )</li>
                 </ul>
+            </div> -->
+
+            <div class="styled-select">
+                <select>
+                    <option value="hide">Sort by popularity</option>
+                    <option value="new to old">New to Old</option>
+                    <option value="old to new">Old to New</option>
+                    <option value="price (min - max )">Price (min - max )</option>
+                    <option value="Price (max - min )">Price (max - min )</option>
+                </select>
             </div>
             <button class="filter-button" id="toggleFilter"><i class="fa-solid fa-filter"></i> Filters</button>
 
@@ -120,44 +130,32 @@
     <div class="filter-content" id="filterContent">
         <!-- Your filter content here -->
         <div class="d-flex align-items-center justify-content-center gap-4 flex-wrap">
-            <div class="custom-select">
-                <div class="select-header">
-                    <span>Categories</span>
-                    <div class="arrow ms-1"><i class="fa-solid fa-angle-down dropdown-icon"></i></div>
-                </div>
-                <ul class="options">
-                    <li selected>Categories</li>
-                    <li>New to Old</li>
-                    <li>Old to New</li>
-                    <li>Price (min - max )</li>
-                    <li>Price (max - min )</li>
-                </ul>
+            <div class="styled-select">
+                <select>
+                    <option value="hide">Sort by popularity</option>
+                    <option value="new to old">New to Old</option>
+                    <option value="old to new">Old to New</option>
+                    <option value="price (min - max )">Price (min - max )</option>
+                    <option value="Price (max - min )">Price (max - min )</option>
+                </select>
             </div>
-            <div class="custom-select">
-                <div class="select-header">
-                    <span>Brands</span>
-                    <div class="arrow ms-1"><i class="fa-solid fa-angle-down dropdown-icon"></i></div>
-                </div>
-                <ul class="options">
-                    <li selected>Brands</li>
-                    <li>New to Old</li>
-                    <li>Old to New</li>
-                    <li>Price (min - max )</li>
-                    <li>Price (max - min )</li>
-                </ul>
+            <div class="styled-select">
+                <select>
+                    <option value="hide">Sort by popularity</option>
+                    <option value="new to old">New to Old</option>
+                    <option value="old to new">Old to New</option>
+                    <option value="price (min - max )">Price (min - max )</option>
+                    <option value="Price (max - min )">Price (max - min )</option>
+                </select>
             </div>
-            <div class="custom-select">
-                <div class="select-header">
-                    <span>Price</span>
-                    <div class="arrow ms-1"><i class="fa-solid fa-angle-down dropdown-icon"></i></div>
-                </div>
-                <ul class="options">
-                    <li selected>Price</li>
-                    <li>New to Old</li>
-                    <li>Old to New</li>
-                    <li>Price (min - max )</li>
-                    <li>Price (max - min )</li>
-                </ul>
+            <div class="styled-select">
+                <select>
+                    <option value="hide">Sort by popularity</option>
+                    <option value="new to old">New to Old</option>
+                    <option value="old to new">Old to New</option>
+                    <option value="price (min - max )">Price (min - max )</option>
+                    <option value="Price (max - min )">Price (max - min )</option>
+                </select>
             </div>
         </div>
     </div>
@@ -403,24 +401,63 @@
             });
 
             // custom-select
-            $('.select-header').click(function () {
-            
+           $('select').each(function () {
+                var $this = $(this), numberOfOptions = $(this).children('option').length;
+
+                $this.addClass('select-hidden');
+                $this.wrap('<div class="select"></div>');
+                $this.after('<div class="select-styled"></div>');
+
+                var $styledSelect = $this.next('div.select-styled');
+                $styledSelect.text($this.children('option').eq(0).text());
+
+                var $list = $('<ul />', {
+                    'class': 'select-options'
+                }).insertAfter($styledSelect);
+
+                for (var i = 0; i < numberOfOptions; i++) {
+                    $('<li />', {
+                        text: $this.children('option').eq(i).text(),
+                        rel: $this.children('option').eq(i).val()
+                    }).appendTo($list);
+                    if ($this.children('option').eq(i).is(':selected')) {
+                        $('li[rel="' + $this.children('option').eq(i).val() + '"]').addClass('is-selected')
+                    }
+                }
+
+                var $listItems = $list.children('li');
+
+                $styledSelect.click(function (e) {
+                    e.stopPropagation();
+                    $('div.select-styled.active').not(this).each(function () {
+                        $(this).removeClass('active').next('ul.select-options').hide();
+                    });
+                    $(this).toggleClass('active').next('ul.select-options').toggle();
+                });
+
+                $listItems.click(function (e) {
+                    e.stopPropagation();
+                    $styledSelect.text($(this).text()).removeClass('active');
+                    $this.val($(this).attr('rel'));
+                    $list.find('li.is-selected').removeClass('is-selected');
+                    $list.find('li[rel="' + $(this).attr('rel') + '"]').addClass('is-selected');
+                    $list.hide();
+                    //console.log($this.val());
+                });
+
+                $(document).click(function () {
+                    $styledSelect.removeClass('active');
+                    $list.hide();
+                });
+
             });
-            
-            // arrow-animation
-             $('.custom-select').click(function () {
-                $(this).find('.options').slideToggle();
-                $(this).find('.dropdown-icon').toggleClass('flipped');
-                var action = $(this).find('.options');
-                $(".options").not(action).hide("slow");
-                var $this = $(this);
-                if (!$this.is(e.target) && $this.has(e.target).length === 0) {
-                     $this.find('options').hide();
-                    
-                 }
-            });
-            // Close the dropdown when clicking outside of it
         });      
+    </script>
+
+    <script>
+
+        // custom-select
+        
     </script>
 
     </body>
