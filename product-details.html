@@ -105,10 +105,21 @@
         </div>
         <!-- product-slider -->
         <div class="product-slider">
+           <div>
             <img src="images/product-img-1.png" alt="product-title">
+           </div>
+           <div>
             <img src="images/product-img-1.png" alt="product-title">
+           </div>
+           <div>
             <img src="images/product-img-1.png" alt="product-title">
+           </div>
+           <div>
             <img src="images/product-img-1.png" alt="product-title">
+           </div>
+           <div>
+            <img src="images/product-img-1.png" alt="product-title">
+           </div>
         </div>
 
         <div class="details sec-padding">
@@ -170,15 +181,21 @@
             </div>
         </div>
 
-        
-
         <!-- description  & reviews -->
         <div class="nav-container sec-padding">
             <div class="container">
-                <div class="tabs">
-                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab1" checked>
-                    <label for="tab1" class="tabs__label">Description</label>
-                    <div class="tabs__content mt-4">
+                <ul class="nav nav-tabs mt-4 justify-content-center" id="myTab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane"
+                            role="tab" aria-controls="home-tab-pane" aria-selected="true">Home</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+                            role="tab" aria-controls="profile-tab-pane" aria-selected="false">Profile</button>
+                    </li>
+                </ul>
+                <div class="tab-content mt-4" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
                         <div class="content-holder p-5">
                             <div class="row">
                                 <div class="col-lg-6">
@@ -229,9 +246,7 @@
                             </div>
                         </div>
                     </div>
-                    <input type="radio" class="tabs__radio" name="tabs-example" id="tab2">
-                    <label for="tab2" class="tabs__label">Reviews</label>
-                    <div class="tabs__content mt-4">
+                    <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <div class="content-holder p-5">
                             <h2>Customers Reviews</h2>
                             <!-- reviews -->
@@ -323,7 +338,6 @@
                         </div>
                     </div>
                 </div>
-               
             </div>
         </div>
     </section>

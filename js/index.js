@@ -36,6 +36,5 @@ $(document).ready(function () {
   $(".language-button").click(function () {
     $(this).text($(this).text() == "English" ? "Arabic" : "English");
   });
-
 });
 
